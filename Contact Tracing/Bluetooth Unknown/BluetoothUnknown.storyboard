@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1V-YW-uUK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bluetooth Disabled View Controller-->
+        <scene sceneID="D0X-iB-yLZ">
+            <objects>
+                <viewController storyboardIdentifier="BluetoothDisabledViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k1V-YW-uUK" customClass="BluetoothDisabledViewController" customModule="Contact_Tracing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdy-Df-7pk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aH4-B9-Ah5" customClass="RoundedCornerView" customModule="Contact_Tracing" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="356"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="cwo-Nv-l1o">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="356"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U7w-cP-aOZ" userLabel="Title">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-3o-zJl">
+                                                        <rect key="frame" x="102" y="0.0" width="210" height="80"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth-disabled" translatesAutoresizingMaskIntoConstraints="NO" id="tdY-jN-YDF">
+                                                                <rect key="frame" x="0.0" y="30" width="20" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="Gcl-Pt-zbU"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth disabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAK-mI-0CI">
+                                                                <rect key="frame" x="32" y="12" width="178" height="56"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="HAK-mI-0CI" firstAttribute="leading" secondItem="tdY-jN-YDF" secondAttribute="trailing" constant="12" id="BLn-9n-zUa"/>
+                                                            <constraint firstItem="HAK-mI-0CI" firstAttribute="top" secondItem="bWd-3o-zJl" secondAttribute="top" constant="12" id="Hsp-sc-Imn"/>
+                                                            <constraint firstItem="tdY-jN-YDF" firstAttribute="leading" secondItem="bWd-3o-zJl" secondAttribute="leading" id="NDB-T6-s18"/>
+                                                            <constraint firstAttribute="bottom" secondItem="HAK-mI-0CI" secondAttribute="bottom" constant="12" id="Wtp-Oj-zho"/>
+                                                            <constraint firstItem="tdY-jN-YDF" firstAttribute="centerY" secondItem="HAK-mI-0CI" secondAttribute="centerY" id="cat-fS-09E"/>
+                                                            <constraint firstAttribute="trailing" secondItem="HAK-mI-0CI" secondAttribute="trailing" id="xC4-XN-Ppi"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bWd-3o-zJl" firstAttribute="centerX" secondItem="U7w-cP-aOZ" secondAttribute="centerX" id="6vq-Om-hPX"/>
+                                                    <constraint firstItem="bWd-3o-zJl" firstAttribute="top" secondItem="U7w-cP-aOZ" secondAttribute="top" id="BCM-o9-fZz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bWd-3o-zJl" secondAttribute="bottom" id="rZO-Uj-TEZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTe-hX-02f" userLabel="Message">
+                                                <rect key="frame" x="0.0" y="80" width="414" height="68"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable Bluetooth in your device settings to start contact tracing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRW-13-vLB">
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="68"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="sRW-13-vLB" secondAttribute="bottom" id="4Pl-3q-OTr"/>
+                                                    <constraint firstItem="sRW-13-vLB" firstAttribute="top" secondItem="qTe-hX-02f" secondAttribute="top" id="gyV-pc-hqu"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sRW-13-vLB" secondAttribute="trailing" constant="12" id="liw-xw-4Hi"/>
+                                                    <constraint firstItem="sRW-13-vLB" firstAttribute="leading" secondItem="qTe-hX-02f" secondAttribute="leading" constant="12" id="m2p-Gz-GQ9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dig-Te-ZSY">
+                                                <rect key="frame" x="0.0" y="148" width="414" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-0c-C3D" customClass="PillButton" customModule="Contact_Tracing" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="20" width="382" height="44"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="Mac-qd-0O7"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="Open Settings">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="openBluetoothSettings:" destination="k1V-YW-uUK" eventType="touchUpInside" id="eha-c1-BIh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="cvv-0c-C3D" firstAttribute="top" secondItem="dig-Te-ZSY" secondAttribute="top" constant="20" id="1ZF-cm-vzO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cvv-0c-C3D" secondAttribute="trailing" constant="16" id="41o-uI-Vhx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cvv-0c-C3D" secondAttribute="bottom" constant="16" id="OIS-yc-wqd"/>
+                                                    <constraint firstItem="cvv-0c-C3D" firstAttribute="leading" secondItem="dig-Te-ZSY" secondAttribute="leading" constant="16" id="dwA-gx-rlx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VjT-FK-RhS">
+                                                <rect key="frame" x="0.0" y="228" width="414" height="128"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2q-G6-Azy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+                                                        <state key="normal" title="How to enable Bluetooth">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="i2q-G6-Azy" firstAttribute="top" secondItem="VjT-FK-RhS" secondAttribute="top" id="Vn9-yq-ZtT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="i2q-G6-Azy" secondAttribute="bottom" constant="12" id="jqF-sW-q8R"/>
+                                                    <constraint firstAttribute="trailing" secondItem="i2q-G6-Azy" secondAttribute="trailing" id="oiK-L0-Htj"/>
+                                                    <constraint firstItem="i2q-G6-Azy" firstAttribute="leading" secondItem="VjT-FK-RhS" secondAttribute="leading" id="orB-Iz-R77"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="dark-card-background-color"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cwo-Nv-l1o" secondAttribute="trailing" id="HmW-Mq-Q5v"/>
+                                    <constraint firstAttribute="bottom" secondItem="cwo-Nv-l1o" secondAttribute="bottom" id="NuN-WR-ZKr"/>
+                                    <constraint firstItem="cwo-Nv-l1o" firstAttribute="leading" secondItem="aH4-B9-Ah5" secondAttribute="leading" id="yyq-1I-x1b"/>
+                                    <constraint firstItem="cwo-Nv-l1o" firstAttribute="top" secondItem="aH4-B9-Ah5" secondAttribute="top" id="zOA-CY-1Ab"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aH4-B9-Ah5" firstAttribute="leading" secondItem="WBa-7c-RiQ" secondAttribute="leading" id="VSI-Xu-5dc"/>
+                            <constraint firstItem="WBa-7c-RiQ" firstAttribute="bottom" secondItem="aH4-B9-Ah5" secondAttribute="bottom" id="ZEH-pA-UPz"/>
+                            <constraint firstItem="aH4-B9-Ah5" firstAttribute="top" secondItem="WBa-7c-RiQ" secondAttribute="top" id="ZMz-Ad-hxx"/>
+                            <constraint firstItem="WBa-7c-RiQ" firstAttribute="trailing" secondItem="aH4-B9-Ah5" secondAttribute="trailing" id="zR9-Ij-1Gy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WBa-7c-RiQ"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imd-kP-Iug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bluetooth-disabled" width="20" height="20"/>
+        <namedColor name="dark-card-background-color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

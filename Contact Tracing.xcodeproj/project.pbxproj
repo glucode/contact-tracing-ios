@@ -18,6 +18,14 @@
 		03A5957C245A47BA00B9AA56 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5957B245A47BA00B9AA56 /* RoundedCornerView.swift */; };
 		03A5957E245A4FB300B9AA56 /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5957D245A4FB300B9AA56 /* PillButton.swift */; };
 		03A59580245A591E00B9AA56 /* RadarContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5957F245A591E00B9AA56 /* RadarContactView.swift */; };
+		03A59582245A5EEC00B9AA56 /* ContactTracingOffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A59581245A5EEC00B9AA56 /* ContactTracingOffViewController.swift */; };
+		03A59586245AC27F00B9AA56 /* ContactTracingDisabled.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A59585245AC27F00B9AA56 /* ContactTracingDisabled.storyboard */; };
+		03A59588245ACB0700B9AA56 /* BluetoothOff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A59587245ACB0700B9AA56 /* BluetoothOff.storyboard */; };
+		03A5958A245AD0AD00B9AA56 /* BluetoothDisabledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A59589245AD0AD00B9AA56 /* BluetoothDisabledViewController.swift */; };
+		03A5958C245AD90400B9AA56 /* BluetoothDisabled.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A5958B245AD90400B9AA56 /* BluetoothDisabled.storyboard */; };
+		03A5958E245ADE1200B9AA56 /* BluetoothUnknown.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A5958D245ADE1200B9AA56 /* BluetoothUnknown.storyboard */; };
+		03A59590245AE0D600B9AA56 /* ContactTracingEnabled.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A5958F245AE0D600B9AA56 /* ContactTracingEnabled.storyboard */; };
+		03A59592245AE2AB00B9AA56 /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A59591245AE2AB00B9AA56 /* RadarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,14 @@
 		03A5957B245A47BA00B9AA56 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		03A5957D245A4FB300B9AA56 /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
 		03A5957F245A591E00B9AA56 /* RadarContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarContactView.swift; sourceTree = "<group>"; };
+		03A59581245A5EEC00B9AA56 /* ContactTracingOffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTracingOffViewController.swift; sourceTree = "<group>"; };
+		03A59585245AC27F00B9AA56 /* ContactTracingDisabled.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactTracingDisabled.storyboard; sourceTree = "<group>"; };
+		03A59587245ACB0700B9AA56 /* BluetoothOff.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BluetoothOff.storyboard; sourceTree = "<group>"; };
+		03A59589245AD0AD00B9AA56 /* BluetoothDisabledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDisabledViewController.swift; sourceTree = "<group>"; };
+		03A5958B245AD90400B9AA56 /* BluetoothDisabled.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BluetoothDisabled.storyboard; sourceTree = "<group>"; };
+		03A5958D245ADE1200B9AA56 /* BluetoothUnknown.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BluetoothUnknown.storyboard; sourceTree = "<group>"; };
+		03A5958F245AE0D600B9AA56 /* ContactTracingEnabled.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactTracingEnabled.storyboard; sourceTree = "<group>"; };
+		03A59591245AE2AB00B9AA56 /* RadarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +130,12 @@
 				03A59579245A26EF00B9AA56 /* MainViewController.swift */,
 				03A5957B245A47BA00B9AA56 /* RoundedCornerView.swift */,
 				03A5957D245A4FB300B9AA56 /* PillButton.swift */,
-				03A5957F245A591E00B9AA56 /* RadarContactView.swift */,
+				03A59597245AF03400B9AA56 /* Radar */,
+				03A59594245AEF5F00B9AA56 /* Contact Tracing On */,
+				03A59596245AF01A00B9AA56 /* Contact Tracing Disabled */,
+				03A59595245AEFEC00B9AA56 /* Bluetooth Disabled */,
+				03A59598245AF04800B9AA56 /* Bluetooth Unknown */,
+				03A59593245AEF4B00B9AA56 /* Bluetooth Off */,
 			);
 			path = "Contact Tracing";
 			sourceTree = "<group>";
@@ -135,6 +156,57 @@
 				03A5956D245A252700B9AA56 /* Info.plist */,
 			);
 			path = "Contact TracingUITests";
+			sourceTree = "<group>";
+		};
+		03A59593245AEF4B00B9AA56 /* Bluetooth Off */ = {
+			isa = PBXGroup;
+			children = (
+				03A59587245ACB0700B9AA56 /* BluetoothOff.storyboard */,
+			);
+			path = "Bluetooth Off";
+			sourceTree = "<group>";
+		};
+		03A59594245AEF5F00B9AA56 /* Contact Tracing On */ = {
+			isa = PBXGroup;
+			children = (
+				03A5958F245AE0D600B9AA56 /* ContactTracingEnabled.storyboard */,
+			);
+			path = "Contact Tracing On";
+			sourceTree = "<group>";
+		};
+		03A59595245AEFEC00B9AA56 /* Bluetooth Disabled */ = {
+			isa = PBXGroup;
+			children = (
+				03A59589245AD0AD00B9AA56 /* BluetoothDisabledViewController.swift */,
+				03A5958B245AD90400B9AA56 /* BluetoothDisabled.storyboard */,
+			);
+			path = "Bluetooth Disabled";
+			sourceTree = "<group>";
+		};
+		03A59596245AF01A00B9AA56 /* Contact Tracing Disabled */ = {
+			isa = PBXGroup;
+			children = (
+				03A59581245A5EEC00B9AA56 /* ContactTracingOffViewController.swift */,
+				03A59585245AC27F00B9AA56 /* ContactTracingDisabled.storyboard */,
+			);
+			path = "Contact Tracing Disabled";
+			sourceTree = "<group>";
+		};
+		03A59597245AF03400B9AA56 /* Radar */ = {
+			isa = PBXGroup;
+			children = (
+				03A5957F245A591E00B9AA56 /* RadarContactView.swift */,
+				03A59591245AE2AB00B9AA56 /* RadarView.swift */,
+			);
+			path = Radar;
+			sourceTree = "<group>";
+		};
+		03A59598245AF04800B9AA56 /* Bluetooth Unknown */ = {
+			isa = PBXGroup;
+			children = (
+				03A5958D245ADE1200B9AA56 /* BluetoothUnknown.storyboard */,
+			);
+			path = "Bluetooth Unknown";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +313,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A59586245AC27F00B9AA56 /* ContactTracingDisabled.storyboard in Resources */,
 				03A59556245A252700B9AA56 /* LaunchScreen.storyboard in Resources */,
+				03A5958C245AD90400B9AA56 /* BluetoothDisabled.storyboard in Resources */,
+				03A5958E245ADE1200B9AA56 /* BluetoothUnknown.storyboard in Resources */,
+				03A59590245AE0D600B9AA56 /* ContactTracingEnabled.storyboard in Resources */,
 				03A59553245A252700B9AA56 /* Assets.xcassets in Resources */,
 				03A59551245A252600B9AA56 /* Main.storyboard in Resources */,
+				03A59588245ACB0700B9AA56 /* BluetoothOff.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +345,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A59582245A5EEC00B9AA56 /* ContactTracingOffViewController.swift in Sources */,
 				03A5957E245A4FB300B9AA56 /* PillButton.swift in Sources */,
 				03A5957A245A26EF00B9AA56 /* MainViewController.swift in Sources */,
 				03A5954A245A252600B9AA56 /* AppDelegate.swift in Sources */,
+				03A59592245AE2AB00B9AA56 /* RadarView.swift in Sources */,
 				03A5954C245A252600B9AA56 /* SceneDelegate.swift in Sources */,
+				03A5958A245AD0AD00B9AA56 /* BluetoothDisabledViewController.swift in Sources */,
 				03A59580245A591E00B9AA56 /* RadarContactView.swift in Sources */,
 				03A5957C245A47BA00B9AA56 /* RoundedCornerView.swift in Sources */,
 			);
@@ -378,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -432,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -14,9 +14,8 @@ class RadarContactView: UIButton {
     override func awakeFromNib() {
 
     self.layoutIfNeeded()
-    layer.cornerRadius = self.frame.height / 2.0
-    layer.masksToBounds = true
-
+        layer.cornerRadius = self.frame.height / 2.0
+        layer.masksToBounds = true
     }
     
 }

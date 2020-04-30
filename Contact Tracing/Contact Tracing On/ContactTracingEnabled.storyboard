@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q0n-jv-lG8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bluetooth Disabled View Controller-->
+        <scene sceneID="ZPt-1I-I2G">
+            <objects>
+                <viewController storyboardIdentifier="BluetoothOffViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q0n-jv-lG8" customClass="BluetoothDisabledViewController" customModule="Contact_Tracing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iB9-Wf-hva">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zje-Wk-XKz" customClass="RoundedCornerView" customModule="Contact_Tracing" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="356"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="2Ei-lK-g14">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="356"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEA-fS-jbP" userLabel="Title">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lS-h2-TyA">
+                                                        <rect key="frame" x="124" y="0.0" width="166" height="80"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No contact detected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-Au-q1v">
+                                                                <rect key="frame" x="0.0" y="12" width="166" height="56"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="VrY-Au-q1v" firstAttribute="top" secondItem="9lS-h2-TyA" secondAttribute="top" constant="12" id="1HS-cI-00y"/>
+                                                            <constraint firstItem="VrY-Au-q1v" firstAttribute="leading" secondItem="9lS-h2-TyA" secondAttribute="leading" id="3ho-Fz-v0i"/>
+                                                            <constraint firstAttribute="trailing" secondItem="VrY-Au-q1v" secondAttribute="trailing" id="kvW-nQ-AZN"/>
+                                                            <constraint firstAttribute="bottom" secondItem="VrY-Au-q1v" secondAttribute="bottom" constant="12" id="yox-Nk-hfb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="9lS-h2-TyA" firstAttribute="top" secondItem="LEA-fS-jbP" secondAttribute="top" id="Ps4-6B-587"/>
+                                                    <constraint firstItem="9lS-h2-TyA" firstAttribute="centerX" secondItem="LEA-fS-jbP" secondAttribute="centerX" id="Ubv-iy-7lb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9lS-h2-TyA" secondAttribute="bottom" id="zgZ-j9-sSQ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0P-H6-gjJ" userLabel="Message">
+                                                <rect key="frame" x="0.0" y="281" width="414" height="75"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based on your data, you have not been nearby someone who tested positive for COVID-19." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bct-yA-uoN">
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="35"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Bct-yA-uoN" secondAttribute="bottom" constant="40" id="Q6F-ov-tU9"/>
+                                                    <constraint firstItem="Bct-yA-uoN" firstAttribute="leading" secondItem="W0P-H6-gjJ" secondAttribute="leading" constant="12" id="TO7-qx-QU3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Bct-yA-uoN" secondAttribute="trailing" constant="12" id="mBx-hc-JZn"/>
+                                                    <constraint firstItem="Bct-yA-uoN" firstAttribute="top" secondItem="W0P-H6-gjJ" secondAttribute="top" id="uOV-nQ-VXa"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2Ei-lK-g14" secondAttribute="bottom" id="0IP-eA-hH2"/>
+                                    <constraint firstItem="2Ei-lK-g14" firstAttribute="top" secondItem="Zje-Wk-XKz" secondAttribute="top" id="ALg-uF-wi3"/>
+                                    <constraint firstItem="2Ei-lK-g14" firstAttribute="leading" secondItem="Zje-Wk-XKz" secondAttribute="leading" id="Gfo-AE-uwW"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Ei-lK-g14" secondAttribute="trailing" id="xhw-Dp-JDN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zje-Wk-XKz" firstAttribute="leading" secondItem="rKQ-Xn-OU7" secondAttribute="leading" id="98f-PS-6vp"/>
+                            <constraint firstItem="rKQ-Xn-OU7" firstAttribute="trailing" secondItem="Zje-Wk-XKz" secondAttribute="trailing" id="FqF-pp-iug"/>
+                            <constraint firstItem="rKQ-Xn-OU7" firstAttribute="bottom" secondItem="Zje-Wk-XKz" secondAttribute="bottom" id="UQc-yf-LW0"/>
+                            <constraint firstItem="Zje-Wk-XKz" firstAttribute="top" secondItem="rKQ-Xn-OU7" secondAttribute="top" id="nm6-17-WPV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rKQ-Xn-OU7"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90s-56-Szk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-468" y="46"/>
+        </scene>
+    </scenes>
+</document>

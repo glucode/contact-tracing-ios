@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jus-fZ-zhN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact Tracing Off View Controller-->
+        <scene sceneID="lyj-aR-FEM">
+            <objects>
+                <viewController storyboardIdentifier="ContactTracingDisabledViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jus-fZ-zhN" customClass="ContactTracingOffViewController" customModule="Contact_Tracing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yWx-e8-wHd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drc-z2-o3P" customClass="RoundedCornerView" customModule="Contact_Tracing" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="356"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="jNu-6p-ChP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="356"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4hd-pg-HDQ" userLabel="Title">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ty-Vz-kCC">
+                                                        <rect key="frame" x="102.5" y="0.0" width="209.5" height="80"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobile-off" translatesAutoresizingMaskIntoConstraints="NO" id="agq-ip-CPt">
+                                                                <rect key="frame" x="0.0" y="30" width="20" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="UcW-Y1-avK"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact tracing off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udo-xC-X8e">
+                                                                <rect key="frame" x="32" y="12" width="177.5" height="56"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="agq-ip-CPt" firstAttribute="leading" secondItem="8ty-Vz-kCC" secondAttribute="leading" id="5aY-tQ-KnJ"/>
+                                                            <constraint firstItem="agq-ip-CPt" firstAttribute="centerY" secondItem="udo-xC-X8e" secondAttribute="centerY" id="7hI-Oz-bYn"/>
+                                                            <constraint firstItem="udo-xC-X8e" firstAttribute="top" secondItem="8ty-Vz-kCC" secondAttribute="top" constant="12" id="dhY-77-FOH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="udo-xC-X8e" secondAttribute="trailing" id="jAz-kx-hbp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="udo-xC-X8e" secondAttribute="bottom" constant="12" id="p6d-xA-oaZ"/>
+                                                            <constraint firstItem="udo-xC-X8e" firstAttribute="leading" secondItem="agq-ip-CPt" secondAttribute="trailing" constant="12" id="r8U-L3-7ow"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="8ty-Vz-kCC" secondAttribute="bottom" id="JoC-me-v2i"/>
+                                                    <constraint firstItem="8ty-Vz-kCC" firstAttribute="top" secondItem="4hd-pg-HDQ" secondAttribute="top" id="mQ7-To-bs9"/>
+                                                    <constraint firstItem="8ty-Vz-kCC" firstAttribute="centerX" secondItem="4hd-pg-HDQ" secondAttribute="centerX" id="xXf-MG-QDM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wzj-lT-LZM" userLabel="Message">
+                                                <rect key="frame" x="0.0" y="80" width="414" height="68"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will not be notified if you have been nearby someone who tested positive for COVID-19." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hS-sA-AaZ">
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="68"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="8hS-sA-AaZ" secondAttribute="bottom" id="Z7F-N5-mjG"/>
+                                                    <constraint firstItem="8hS-sA-AaZ" firstAttribute="top" secondItem="Wzj-lT-LZM" secondAttribute="top" id="bGc-Un-9Vc"/>
+                                                    <constraint firstItem="8hS-sA-AaZ" firstAttribute="leading" secondItem="Wzj-lT-LZM" secondAttribute="leading" constant="12" id="mU7-d2-KJl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8hS-sA-AaZ" secondAttribute="trailing" constant="12" id="myB-hp-7Uy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ne-ho-ddR">
+                                                <rect key="frame" x="0.0" y="148" width="414" height="80"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67B-ZU-2ks" customClass="PillButton" customModule="Contact_Tracing" customModuleProvider="target">
+                                                        <rect key="frame" x="16" y="20" width="382" height="44"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="TUb-QV-gFD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="Turn On">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="enableContactTracing:" destination="w35-ET-A5g" eventType="touchUpInside" id="cSo-sr-TIs"/>
+                                                            <action selector="enableContactTracing:" destination="jus-fZ-zhN" eventType="touchUpInside" id="k8b-Py-gaq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="67B-ZU-2ks" firstAttribute="top" secondItem="6ne-ho-ddR" secondAttribute="top" constant="20" id="M33-VK-K56"/>
+                                                    <constraint firstAttribute="trailing" secondItem="67B-ZU-2ks" secondAttribute="trailing" constant="16" id="UAV-bH-m37"/>
+                                                    <constraint firstItem="67B-ZU-2ks" firstAttribute="leading" secondItem="6ne-ho-ddR" secondAttribute="leading" constant="16" id="kpI-JE-IA9"/>
+                                                    <constraint firstAttribute="bottom" secondItem="67B-ZU-2ks" secondAttribute="bottom" constant="16" id="yH9-ut-pzw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNb-j9-SAZ">
+                                                <rect key="frame" x="0.0" y="228" width="414" height="128"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJ3-ia-9px">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+                                                        <state key="normal" title="Information about contact tracing">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="XJ3-ia-9px" secondAttribute="bottom" constant="12" id="Qz9-nf-DDU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XJ3-ia-9px" secondAttribute="trailing" id="ew1-jB-A7d"/>
+                                                    <constraint firstItem="XJ3-ia-9px" firstAttribute="leading" secondItem="YNb-j9-SAZ" secondAttribute="leading" id="fs6-j0-Od7"/>
+                                                    <constraint firstItem="XJ3-ia-9px" firstAttribute="top" secondItem="YNb-j9-SAZ" secondAttribute="top" id="gUM-9g-IaK"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="dark-card-background-color"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jNu-6p-ChP" secondAttribute="bottom" id="ItA-kP-uNX"/>
+                                    <constraint firstItem="jNu-6p-ChP" firstAttribute="top" secondItem="drc-z2-o3P" secondAttribute="top" id="SWk-Qj-buu"/>
+                                    <constraint firstItem="jNu-6p-ChP" firstAttribute="leading" secondItem="drc-z2-o3P" secondAttribute="leading" id="stg-Ws-i7Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="jNu-6p-ChP" secondAttribute="trailing" id="yjX-Zo-u7U"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="drc-z2-o3P" firstAttribute="top" secondItem="ugV-8S-FSx" secondAttribute="top" id="ORb-Ck-Qq9"/>
+                            <constraint firstItem="drc-z2-o3P" firstAttribute="leading" secondItem="ugV-8S-FSx" secondAttribute="leading" id="VAO-Az-f6W"/>
+                            <constraint firstItem="ugV-8S-FSx" firstAttribute="trailing" secondItem="drc-z2-o3P" secondAttribute="trailing" id="VWD-WZ-sYu"/>
+                            <constraint firstItem="ugV-8S-FSx" firstAttribute="bottom" secondItem="drc-z2-o3P" secondAttribute="bottom" id="a3D-MW-Gyt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ugV-8S-FSx"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Gd-Xc-qxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="w35-ET-A5g" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-251" y="140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mobile-off" width="20" height="20"/>
+        <namedColor name="dark-card-background-color">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
