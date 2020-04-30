@@ -20,41 +20,101 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="FEn-yN-Y69">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1744"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2072"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSa-aU-oFb">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1054"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1382"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKO-0E-2Pv" userLabel="Radar View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="413"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHC-1L-DiD" customClass="RadarContactView" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                <rect key="frame" x="325" y="282" width="8" height="8"/>
+                                                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="Nca-Di-Z6h"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="Xye-Nb-jgl"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKq-lf-yPz" customClass="RadarContactView" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                <rect key="frame" x="40" y="102" width="8" height="8"/>
+                                                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="8" id="ILv-wu-aoG"/>
+                                                                    <constraint firstAttribute="width" constant="8" id="T94-Ak-Puh"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYE-e0-f7e" customClass="RadarContactView" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="214" width="8" height="8"/>
+                                                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="8" id="RZS-pd-jCh"/>
+                                                                    <constraint firstAttribute="width" constant="8" id="Xnd-B1-hfh"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1I-c5-2Qd" customClass="RadarContactView" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                <rect key="frame" x="395" y="90" width="8" height="8"/>
+                                                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="7Q3-tM-ueY"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="APp-kQ-6mM"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08H-mL-VBq" customClass="RadarContactView" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                <rect key="frame" x="300" y="10" width="8" height="8"/>
+                                                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="Lht-sC-omB"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="Wjc-fu-ta1"/>
+                                                                </constraints>
+                                                            </view>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-beacon-background" translatesAutoresizingMaskIntoConstraints="NO" id="pkq-eh-25D">
-                                                                <rect key="frame" x="179" y="196" width="56" height="56"/>
+                                                                <rect key="frame" x="179" y="178.5" width="56" height="56"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="56" id="8rR-mM-2hp"/>
                                                                     <constraint firstAttribute="height" constant="56" id="JWa-fK-GQQ"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-beacon" translatesAutoresizingMaskIntoConstraints="NO" id="Hyg-iG-GrH">
-                                                                <rect key="frame" x="191" y="208" width="32" height="32"/>
+                                                                <rect key="frame" x="186.5" y="186" width="41" height="41"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="32" id="8bk-FP-im1"/>
-                                                                    <constraint firstAttribute="height" constant="32" id="m9I-xQ-2Hi"/>
+                                                                    <constraint firstAttribute="width" secondItem="Hyg-iG-GrH" secondAttribute="height" multiplier="1:1" id="CLr-nX-hle"/>
                                                                 </constraints>
                                                             </imageView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eh6-Ov-BDe" customClass="RadarContactView" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                <rect key="frame" x="22" y="26" width="8" height="8"/>
+                                                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="8" id="gnA-VS-EdY"/>
+                                                                    <constraint firstAttribute="height" constant="8" id="ilF-8p-oem"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                         <constraints>
+                                                            <constraint firstItem="08H-mL-VBq" firstAttribute="top" secondItem="SKO-0E-2Pv" secondAttribute="top" constant="10" id="0S7-Gl-Dy0"/>
+                                                            <constraint firstItem="eh6-Ov-BDe" firstAttribute="top" secondItem="SKO-0E-2Pv" secondAttribute="top" constant="26" id="1Qx-Sq-rxs"/>
+                                                            <constraint firstItem="DKq-lf-yPz" firstAttribute="top" secondItem="SKO-0E-2Pv" secondAttribute="top" constant="102" id="2eQ-st-YxZ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="08H-mL-VBq" secondAttribute="trailing" constant="106" id="5av-Yj-AX7"/>
                                                             <constraint firstItem="Hyg-iG-GrH" firstAttribute="centerX" secondItem="SKO-0E-2Pv" secondAttribute="centerX" id="GKP-8J-hX7"/>
+                                                            <constraint firstItem="eh6-Ov-BDe" firstAttribute="leading" secondItem="SKO-0E-2Pv" secondAttribute="leading" constant="22" id="JRy-Tl-pFO"/>
                                                             <constraint firstItem="pkq-eh-25D" firstAttribute="centerY" secondItem="SKO-0E-2Pv" secondAttribute="centerY" id="Nbq-ET-Ne2"/>
+                                                            <constraint firstItem="jYE-e0-f7e" firstAttribute="leading" secondItem="SKO-0E-2Pv" secondAttribute="leading" constant="10" id="ST9-xf-p21"/>
+                                                            <constraint firstItem="jYE-e0-f7e" firstAttribute="top" secondItem="SKO-0E-2Pv" secondAttribute="top" constant="214" id="VQ5-lq-nnC"/>
+                                                            <constraint firstItem="a1I-c5-2Qd" firstAttribute="top" secondItem="SKO-0E-2Pv" secondAttribute="top" constant="90" id="ViW-pO-Fod"/>
+                                                            <constraint firstAttribute="width" secondItem="SKO-0E-2Pv" secondAttribute="height" multiplier="1:1" constant="1" id="Wzo-8a-IED"/>
+                                                            <constraint firstAttribute="trailing" secondItem="JHC-1L-DiD" secondAttribute="trailing" constant="81" id="dXT-yy-Gr6"/>
+                                                            <constraint firstItem="DKq-lf-yPz" firstAttribute="leading" secondItem="SKO-0E-2Pv" secondAttribute="leading" constant="40" id="dsv-AS-bYP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="a1I-c5-2Qd" secondAttribute="trailing" constant="11" id="gJa-0k-sUk"/>
                                                             <constraint firstItem="pkq-eh-25D" firstAttribute="centerX" secondItem="SKO-0E-2Pv" secondAttribute="centerX" id="jQl-59-JUv"/>
+                                                            <constraint firstItem="JHC-1L-DiD" firstAttribute="top" secondItem="SKO-0E-2Pv" secondAttribute="top" constant="282" id="lCS-nA-ESb"/>
                                                             <constraint firstItem="Hyg-iG-GrH" firstAttribute="centerY" secondItem="SKO-0E-2Pv" secondAttribute="centerY" id="pgv-q4-lu1"/>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XAC-t7-ES1">
-                                                        <rect key="frame" x="30" y="398" width="354" height="626"/>
+                                                        <rect key="frame" x="30" y="293" width="354" height="1059"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09S-S6-9Ro" customClass="RoundedCornerView" customModule="Contact_Tracing" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="626"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09S-S6-9Ro" userLabel="Action Card" customClass="RoundedCornerView" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="354" height="911"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-EN-ecW">
                                                                         <rect key="frame" x="83" y="12" width="188.5" height="44.5"/>
@@ -84,13 +144,13 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" You will not be notified if you have been nearby someone who tested positive for COVID-19" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTL-eH-M6n">
-                                                                        <rect key="frame" x="12" y="68.5" width="330" height="463.5"/>
+                                                                        <rect key="frame" x="12" y="68.5" width="330" height="748.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzy-7V-gFs" customClass="PillButton" customModule="Contact_Tracing" customModuleProvider="target">
-                                                                        <rect key="frame" x="12" y="552" width="330" height="44"/>
+                                                                        <rect key="frame" x="12" y="837" width="330" height="44"/>
                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="44" id="I7M-QC-H7y"/>
@@ -114,6 +174,40 @@
                                                                     <constraint firstItem="gzy-7V-gFs" firstAttribute="leading" secondItem="bTL-eH-M6n" secondAttribute="leading" id="u8v-cP-cGo"/>
                                                                 </constraints>
                                                             </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGq-F9-gvX" userLabel="Button Containers">
+                                                                <rect key="frame" x="0.0" y="911" width="354" height="148"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFD-ua-kqf" customClass="PillButton" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                        <rect key="frame" x="58" y="24" width="238" height="44"/>
+                                                                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="44" id="7vf-q5-hdq"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Check for symptoms">
+                                                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        </state>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yq-kJ-GrD" customClass="PillButton" customModule="Contact_Tracing" customModuleProvider="target">
+                                                                        <rect key="frame" x="58" y="80" width="238" height="44"/>
+                                                                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="44" id="YqL-Nk-1f2"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Learn more">
+                                                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        </state>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="3yq-kJ-GrD" firstAttribute="trailing" secondItem="rFD-ua-kqf" secondAttribute="trailing" id="IM5-z2-Thx"/>
+                                                                    <constraint firstItem="rFD-ua-kqf" firstAttribute="leading" secondItem="PGq-F9-gvX" secondAttribute="leading" constant="58" id="JUG-W4-M0j"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="3yq-kJ-GrD" secondAttribute="bottom" constant="24" id="OwE-r0-7Hi"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="rFD-ua-kqf" secondAttribute="trailing" constant="58" id="XeZ-3G-aTJ"/>
+                                                                    <constraint firstItem="3yq-kJ-GrD" firstAttribute="leading" secondItem="rFD-ua-kqf" secondAttribute="leading" id="jXX-Ep-cw4"/>
+                                                                    <constraint firstItem="3yq-kJ-GrD" firstAttribute="top" secondItem="rFD-ua-kqf" secondAttribute="bottom" constant="12" id="x1v-57-fY9"/>
+                                                                    <constraint firstItem="rFD-ua-kqf" firstAttribute="top" secondItem="PGq-F9-gvX" secondAttribute="top" constant="24" id="xjb-CX-U9b"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -124,12 +218,12 @@
                                                     <constraint firstItem="SKO-0E-2Pv" firstAttribute="top" secondItem="zSa-aU-oFb" secondAttribute="top" id="Vu3-rR-T4N"/>
                                                     <constraint firstAttribute="trailing" secondItem="SKO-0E-2Pv" secondAttribute="trailing" id="aS2-IJ-aAS"/>
                                                     <constraint firstAttribute="bottom" secondItem="XAC-t7-ES1" secondAttribute="bottom" constant="30" id="bSx-y5-b9m"/>
-                                                    <constraint firstItem="XAC-t7-ES1" firstAttribute="top" secondItem="SKO-0E-2Pv" secondAttribute="bottom" constant="-50" id="cD9-85-w0b"/>
+                                                    <constraint firstItem="XAC-t7-ES1" firstAttribute="top" secondItem="SKO-0E-2Pv" secondAttribute="bottom" constant="-120" id="cD9-85-w0b"/>
                                                     <constraint firstItem="SKO-0E-2Pv" firstAttribute="leading" secondItem="zSa-aU-oFb" secondAttribute="leading" id="kHL-7z-9fQ"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iV3-bE-05S">
-                                                <rect key="frame" x="0.0" y="1054" width="414" height="690"/>
+                                                <rect key="frame" x="0.0" y="1382" width="414" height="690"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn on contact tracing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuW-jf-AA2">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
@@ -166,7 +260,7 @@
                             <constraint firstItem="Orz-LY-X5A" firstAttribute="leading" secondItem="d8U-od-NSa" secondAttribute="leading" id="Vbp-k0-htA"/>
                             <constraint firstItem="d8U-od-NSa" firstAttribute="bottom" secondItem="Orz-LY-X5A" secondAttribute="bottom" id="e4R-hF-AgM"/>
                             <constraint firstItem="Orz-LY-X5A" firstAttribute="top" secondItem="LHD-ga-xXq" secondAttribute="top" id="nW7-XP-cMe"/>
-                            <constraint firstItem="SKO-0E-2Pv" firstAttribute="height" secondItem="LHD-ga-xXq" secondAttribute="height" multiplier="0.5" id="r6c-Mz-ydX"/>
+                            <constraint firstItem="Hyg-iG-GrH" firstAttribute="width" secondItem="LHD-ga-xXq" secondAttribute="width" multiplier="0.1" id="zh1-VH-Kbh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d8U-od-NSa"/>
                     </view>
