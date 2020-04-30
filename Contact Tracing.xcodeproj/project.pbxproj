@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A5954A245A252600B9AA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A59549245A252600B9AA56 /* AppDelegate.swift */; };
+		03A5954C245A252600B9AA56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5954B245A252600B9AA56 /* SceneDelegate.swift */; };
+		03A59551245A252600B9AA56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A5954F245A252600B9AA56 /* Main.storyboard */; };
+		03A59553245A252700B9AA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A59552245A252700B9AA56 /* Assets.xcassets */; };
+		03A59556245A252700B9AA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A59554245A252700B9AA56 /* LaunchScreen.storyboard */; };
+		03A59561245A252700B9AA56 /* Contact_TracingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A59560245A252700B9AA56 /* Contact_TracingTests.swift */; };
+		03A5956C245A252700B9AA56 /* Contact_TracingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5956B245A252700B9AA56 /* Contact_TracingUITests.swift */; };
+		03A5957A245A26EF00B9AA56 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A59579245A26EF00B9AA56 /* MainViewController.swift */; };
+		03A5957C245A47BA00B9AA56 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5957B245A47BA00B9AA56 /* RoundedCornerView.swift */; };
+		03A5957E245A4FB300B9AA56 /* PillButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5957D245A4FB300B9AA56 /* PillButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03A5955D245A252700B9AA56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03A5953E245A252600B9AA56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03A59545245A252600B9AA56;
+			remoteInfo = "Contact Tracing";
+		};
+		03A59568245A252700B9AA56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03A5953E245A252600B9AA56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03A59545245A252600B9AA56;
+			remoteInfo = "Contact Tracing";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A59546245A252600B9AA56 /* Contact Tracing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contact Tracing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A59549245A252600B9AA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03A5954B245A252600B9AA56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03A59550245A252600B9AA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03A59552245A252700B9AA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03A59555245A252700B9AA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03A59557245A252700B9AA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A5955C245A252700B9AA56 /* Contact TracingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contact TracingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A59560245A252700B9AA56 /* Contact_TracingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact_TracingTests.swift; sourceTree = "<group>"; };
+		03A59562245A252700B9AA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A59567245A252700B9AA56 /* Contact TracingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contact TracingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A5956B245A252700B9AA56 /* Contact_TracingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact_TracingUITests.swift; sourceTree = "<group>"; };
+		03A5956D245A252700B9AA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03A59579245A26EF00B9AA56 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		03A5957B245A47BA00B9AA56 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		03A5957D245A4FB300B9AA56 /* PillButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03A59543245A252600B9AA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A59559245A252700B9AA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A59564245A252700B9AA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A5953D245A252600B9AA56 = {
+			isa = PBXGroup;
+			children = (
+				03A59548245A252600B9AA56 /* Contact Tracing */,
+				03A5955F245A252700B9AA56 /* Contact TracingTests */,
+				03A5956A245A252700B9AA56 /* Contact TracingUITests */,
+				03A59547245A252600B9AA56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03A59547245A252600B9AA56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03A59546245A252600B9AA56 /* Contact Tracing.app */,
+				03A5955C245A252700B9AA56 /* Contact TracingTests.xctest */,
+				03A59567245A252700B9AA56 /* Contact TracingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03A59548245A252600B9AA56 /* Contact Tracing */ = {
+			isa = PBXGroup;
+			children = (
+				03A59549245A252600B9AA56 /* AppDelegate.swift */,
+				03A5954B245A252600B9AA56 /* SceneDelegate.swift */,
+				03A5954F245A252600B9AA56 /* Main.storyboard */,
+				03A59552245A252700B9AA56 /* Assets.xcassets */,
+				03A59554245A252700B9AA56 /* LaunchScreen.storyboard */,
+				03A59557245A252700B9AA56 /* Info.plist */,
+				03A59579245A26EF00B9AA56 /* MainViewController.swift */,
+				03A5957B245A47BA00B9AA56 /* RoundedCornerView.swift */,
+				03A5957D245A4FB300B9AA56 /* PillButton.swift */,
+			);
+			path = "Contact Tracing";
+			sourceTree = "<group>";
+		};
+		03A5955F245A252700B9AA56 /* Contact TracingTests */ = {
+			isa = PBXGroup;
+			children = (
+				03A59560245A252700B9AA56 /* Contact_TracingTests.swift */,
+				03A59562245A252700B9AA56 /* Info.plist */,
+			);
+			path = "Contact TracingTests";
+			sourceTree = "<group>";
+		};
+		03A5956A245A252700B9AA56 /* Contact TracingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03A5956B245A252700B9AA56 /* Contact_TracingUITests.swift */,
+				03A5956D245A252700B9AA56 /* Info.plist */,
+			);
+			path = "Contact TracingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03A59545245A252600B9AA56 /* Contact Tracing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A59570245A252700B9AA56 /* Build configuration list for PBXNativeTarget "Contact Tracing" */;
+			buildPhases = (
+				03A59542245A252600B9AA56 /* Sources */,
+				03A59543245A252600B9AA56 /* Frameworks */,
+				03A59544245A252600B9AA56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Contact Tracing";
+			productName = "Contact Tracing";
+			productReference = 03A59546245A252600B9AA56 /* Contact Tracing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03A5955B245A252700B9AA56 /* Contact TracingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A59573245A252700B9AA56 /* Build configuration list for PBXNativeTarget "Contact TracingTests" */;
+			buildPhases = (
+				03A59558245A252700B9AA56 /* Sources */,
+				03A59559245A252700B9AA56 /* Frameworks */,
+				03A5955A245A252700B9AA56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03A5955E245A252700B9AA56 /* PBXTargetDependency */,
+			);
+			name = "Contact TracingTests";
+			productName = "Contact TracingTests";
+			productReference = 03A5955C245A252700B9AA56 /* Contact TracingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03A59566245A252700B9AA56 /* Contact TracingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A59576245A252700B9AA56 /* Build configuration list for PBXNativeTarget "Contact TracingUITests" */;
+			buildPhases = (
+				03A59563245A252700B9AA56 /* Sources */,
+				03A59564245A252700B9AA56 /* Frameworks */,
+				03A59565245A252700B9AA56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03A59569245A252700B9AA56 /* PBXTargetDependency */,
+			);
+			name = "Contact TracingUITests";
+			productName = "Contact TracingUITests";
+			productReference = 03A59567245A252700B9AA56 /* Contact TracingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03A5953E245A252600B9AA56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Glucode (Pty) Ltd.";
+				TargetAttributes = {
+					03A59545245A252600B9AA56 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					03A5955B245A252700B9AA56 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 03A59545245A252600B9AA56;
+					};
+					03A59566245A252700B9AA56 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 03A59545245A252600B9AA56;
+					};
+				};
+			};
+			buildConfigurationList = 03A59541245A252600B9AA56 /* Build configuration list for PBXProject "Contact Tracing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03A5953D245A252600B9AA56;
+			productRefGroup = 03A59547245A252600B9AA56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03A59545245A252600B9AA56 /* Contact Tracing */,
+				03A5955B245A252700B9AA56 /* Contact TracingTests */,
+				03A59566245A252700B9AA56 /* Contact TracingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03A59544245A252600B9AA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A59556245A252700B9AA56 /* LaunchScreen.storyboard in Resources */,
+				03A59553245A252700B9AA56 /* Assets.xcassets in Resources */,
+				03A59551245A252600B9AA56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A5955A245A252700B9AA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A59565245A252700B9AA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03A59542245A252600B9AA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A5957E245A4FB300B9AA56 /* PillButton.swift in Sources */,
+				03A5957A245A26EF00B9AA56 /* MainViewController.swift in Sources */,
+				03A5954A245A252600B9AA56 /* AppDelegate.swift in Sources */,
+				03A5954C245A252600B9AA56 /* SceneDelegate.swift in Sources */,
+				03A5957C245A47BA00B9AA56 /* RoundedCornerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A59558245A252700B9AA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A59561245A252700B9AA56 /* Contact_TracingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03A59563245A252700B9AA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A5956C245A252700B9AA56 /* Contact_TracingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03A5955E245A252700B9AA56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03A59545245A252600B9AA56 /* Contact Tracing */;
+			targetProxy = 03A5955D245A252700B9AA56 /* PBXContainerItemProxy */;
+		};
+		03A59569245A252700B9AA56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03A59545245A252600B9AA56 /* Contact Tracing */;
+			targetProxy = 03A59568245A252700B9AA56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03A5954F245A252600B9AA56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A59550245A252600B9AA56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03A59554245A252700B9AA56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A59555245A252700B9AA56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03A5956E245A252700B9AA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03A5956F245A252700B9AA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03A59571245A252700B9AA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69XM53S226;
+				INFOPLIST_FILE = "Contact Tracing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Contact-Tracing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03A59572245A252700B9AA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69XM53S226;
+				INFOPLIST_FILE = "Contact Tracing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Contact-Tracing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03A59574245A252700B9AA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69XM53S226;
+				INFOPLIST_FILE = "Contact TracingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Contact-TracingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contact Tracing.app/Contact Tracing";
+			};
+			name = Debug;
+		};
+		03A59575245A252700B9AA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69XM53S226;
+				INFOPLIST_FILE = "Contact TracingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Contact-TracingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contact Tracing.app/Contact Tracing";
+			};
+			name = Release;
+		};
+		03A59577245A252700B9AA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69XM53S226;
+				INFOPLIST_FILE = "Contact TracingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Contact-TracingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Contact Tracing";
+			};
+			name = Debug;
+		};
+		03A59578245A252700B9AA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69XM53S226;
+				INFOPLIST_FILE = "Contact TracingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Contact-TracingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Contact Tracing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03A59541245A252600B9AA56 /* Build configuration list for PBXProject "Contact Tracing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A5956E245A252700B9AA56 /* Debug */,
+				03A5956F245A252700B9AA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A59570245A252700B9AA56 /* Build configuration list for PBXNativeTarget "Contact Tracing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A59571245A252700B9AA56 /* Debug */,
+				03A59572245A252700B9AA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A59573245A252700B9AA56 /* Build configuration list for PBXNativeTarget "Contact TracingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A59574245A252700B9AA56 /* Debug */,
+				03A59575245A252700B9AA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A59576245A252700B9AA56 /* Build configuration list for PBXNativeTarget "Contact TracingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A59577245A252700B9AA56 /* Debug */,
+				03A59578245A252700B9AA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03A5953E245A252600B9AA56 /* Project object */;
+}
