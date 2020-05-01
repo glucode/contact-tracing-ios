@@ -1,6 +1,8 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Contact Tracing App built with Apple's ExposureNotification framework
+
+Design based on https://medium.com/@jelleprins/openui-a6b9c3d741de
 
 ### What is this repository for? ###
 
