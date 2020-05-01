@@ -6,7 +6,7 @@ target 'Contact Tracing' do
   use_frameworks!
 
   # Pods for Contact Tracing
-  pod 'HGRippleRadarView'
+  pod 'HGRippleRadarView', :git => 'https://github.com/glucode/HGRippleRadarView.git'
 
   target 'Contact TracingTests' do
     inherit! :search_paths
