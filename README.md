@@ -4,21 +4,6 @@ Contact Tracing App built with Apple's ExposureNotification framework
 
 Design based on https://medium.com/@jelleprins/openui-a6b9c3d741de
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
 ### Contribution guidelines ###
 
 * Writing tests
