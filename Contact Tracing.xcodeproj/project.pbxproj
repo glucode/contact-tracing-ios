@@ -32,6 +32,10 @@
 		0BB4165C8308A6CF0B4630D3 /* Pods_Contact_Tracing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D752466C9877BA77F699A1E5 /* Pods_Contact_Tracing.framework */; };
 		59B4B7E0BA657718BB0699BA /* Pods_Contact_TracingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3729FDBC20EFE20D4234A9CE /* Pods_Contact_TracingTests.framework */; };
 		7C43EA9CE82E57934CDFD06D /* Pods_Contact_Tracing_Contact_TracingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B34323DA1907E48BC3551D /* Pods_Contact_Tracing_Contact_TracingUITests.framework */; };
+		FA5AE721245C5877005A59BE /* UIView+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE720245C5877005A59BE /* UIView+Designable.swift */; };
+		FA5AE723245C5AAF005A59BE /* UIImageView+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */; };
+		FA5AE726245C6E74005A59BE /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE725245C6E74005A59BE /* UIApplication+Extension.swift */; };
+		FA5AE729245C704E005A59BE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE728245C704E005A59BE /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 		AF2C41BE40617356AE5A63C4 /* Pods-Contact Tracing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact Tracing.release.xcconfig"; path = "Target Support Files/Pods-Contact Tracing/Pods-Contact Tracing.release.xcconfig"; sourceTree = "<group>"; };
 		B8382A0B5AC885EACD10A879 /* Pods-Contact Tracing-Contact TracingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact Tracing-Contact TracingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Contact Tracing-Contact TracingUITests/Pods-Contact Tracing-Contact TracingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D752466C9877BA77F699A1E5 /* Pods_Contact_Tracing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contact_Tracing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5AE720245C5877005A59BE /* UIView+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Designable.swift"; sourceTree = "<group>"; };
+		FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Designable.swift"; sourceTree = "<group>"; };
+		FA5AE725245C6E74005A59BE /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		FA5AE728245C704E005A59BE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +168,9 @@
 				03A59595245AEFEC00B9AA56 /* Bluetooth Disabled */,
 				03A59598245AF04800B9AA56 /* Bluetooth Unknown */,
 				03A59593245AEF4B00B9AA56 /* Bluetooth Off */,
+				FA5AE727245C702A005A59BE /* Helper */,
+				FA5AE724245C6E5C005A59BE /* Extensions */,
+				FA5AE71F245C5851005A59BE /* Designables */,
 			);
 			path = "Contact Tracing";
 			sourceTree = "<group>";
@@ -264,6 +275,31 @@
 				59319096084665E08265899A /* Pods-Contact TracingTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA5AE71F245C5851005A59BE /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				FA5AE720245C5877005A59BE /* UIView+Designable.swift */,
+				FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		FA5AE724245C6E5C005A59BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA5AE725245C6E74005A59BE /* UIApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA5AE727245C702A005A59BE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FA5AE728245C704E005A59BE /* NotificationManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,15 +547,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5AE723245C5AAF005A59BE /* UIImageView+Designable.swift in Sources */,
 				03A59582245A5EEC00B9AA56 /* ContactTracingOffViewController.swift in Sources */,
 				03A5957E245A4FB300B9AA56 /* PillButton.swift in Sources */,
 				03A5959F245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift in Sources */,
 				03A5957A245A26EF00B9AA56 /* MainViewController.swift in Sources */,
 				03A5954A245A252600B9AA56 /* AppDelegate.swift in Sources */,
+				FA5AE726245C6E74005A59BE /* UIApplication+Extension.swift in Sources */,
 				03A59592245AE2AB00B9AA56 /* RadarView.swift in Sources */,
 				03A5954C245A252600B9AA56 /* SceneDelegate.swift in Sources */,
 				03A5958A245AD0AD00B9AA56 /* BluetoothDisabledViewController.swift in Sources */,
+				FA5AE721245C5877005A59BE /* UIView+Designable.swift in Sources */,
 				03A59580245A591E00B9AA56 /* RadarContactView.swift in Sources */,
+				FA5AE729245C704E005A59BE /* NotificationManager.swift in Sources */,
 				03A5959D245C350000B9AA56 /* BluetoothOnboardingViewController.swift in Sources */,
 				03A5957C245A47BA00B9AA56 /* RoundedCornerView.swift in Sources */,
 			);
