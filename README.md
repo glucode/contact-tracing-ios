@@ -1,29 +1,11 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Contact Tracing App built with Apple's ExposureNotification framework
 
-### What is this repository for? ###
+Design based on https://medium.com/@jelleprins/openui-a6b9c3d741de
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
+![Contact Tracing App iOS](https://miro.medium.com/max/2000/1*W0yAVFaE0Xaa-dpRrvyYow.jpeg)
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+Feel free to mail nico@glucode.com if you would like to contribute or have any questions
