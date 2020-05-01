@@ -14,5 +14,4 @@ Design based on https://medium.com/@jelleprins/openui-a6b9c3d741de
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-* Other community or team contact
+Feel free to mail nico@glucode.com if you would like to contribute or have any questions
