@@ -289,7 +289,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notifications-bell-off" translatesAutoresizingMaskIntoConstraints="NO" id="qSM-2F-eIe" customClass="DesignableImageView" customModule="Contact_Tracing" customModuleProvider="target">
                                         <rect key="frame" x="159" y="115" width="56" height="56"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="33a-Fz-CqT"/>
                                             <constraint firstAttribute="width" secondItem="qSM-2F-eIe" secondAttribute="height" multiplier="1:1" id="DVU-FH-CM3"/>
@@ -316,9 +316,12 @@
                                         <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MER-wB-Sdj">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MER-wB-Sdj" customClass="UnderlinedButton" customModule="Contact_Tracing" customModuleProvider="target">
                                         <rect key="frame" x="138" y="339.66666666666669" width="98" height="30"/>
-                                        <state key="normal" title="Open Settings"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="attributedString" value="Open Settings"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onOpenSettingsTap:" destination="Kjx-wf-whz" eventType="touchUpInside" id="mvl-eE-DkS"/>
                                         </connections>
