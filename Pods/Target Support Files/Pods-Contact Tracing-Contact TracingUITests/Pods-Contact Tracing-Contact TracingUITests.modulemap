@@ -1,0 +1,6 @@
+framework module Pods_Contact_Tracing_Contact_TracingUITests {
+  umbrella header "Pods-Contact Tracing-Contact TracingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

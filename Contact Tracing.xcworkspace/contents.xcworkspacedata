@@ -4,4 +4,10 @@
    <FileRef
       location = "container:Contact Tracing.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Contact Tracing.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

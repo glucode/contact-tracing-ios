@@ -11,10 +11,15 @@ import UIKit
 import ExposureNotification
 
 class ContactTracingOffViewController: UIViewController {
+    var exposureManager: ENManager?
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
     
     @IBAction func enableContactTracing(_ sender: Any) {
 //        let manager = ENManager()
-//
 //        manager.activate { error in
 //            guard error == nil else { return }
 //
@@ -23,6 +28,12 @@ class ContactTracingOffViewController: UIViewController {
 //
 //                // app is now advertising and monitoring for tracing identifiers
 //            }
+//            
+//            self.exposureManager = manager
 //        }
+    }
+    
+    deinit {
+//        manager.invalidate()
     }
 }

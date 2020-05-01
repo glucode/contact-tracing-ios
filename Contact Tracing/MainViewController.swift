@@ -13,9 +13,16 @@ enum AppState {
     case onboardingRequired
     case contactTracingOn
     case contactTracingOff
+    case bluetoothOff
+    case bluetoothDisabled
 }
 
-class MainViewController: UIViewController, CBCentralManagerDelegate {
+class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate {
+
+    
+    let peripheralManager = CBPeripheralManager()
+    let manager = ENManager()
+
     private var bluetoothManager: CBCentralManager?
     private var appState: AppState = .contactTracingOff
     private var stateContentViewController: UIViewController?
@@ -23,45 +30,47 @@ class MainViewController: UIViewController, CBCentralManagerDelegate {
     @IBOutlet weak var statusContainerView: UIView!
     @IBOutlet weak var radarContainerView: RadarView!
     
+    override func viewDidLoad() {
+        bluetoothManager = CBCentralManager(delegate: self, queue: nil, options: nil)
+        peripheralManager.delegate = self
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        bluetoothManager = CBCentralManager(delegate: self, queue: nil, options: nil)
-        
+        showOnboarding()
+        configureManager()
+        updateUI()
+    }
+    
+    func showOnboarding() {
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        guard let controller = storyboard.instantiateInitialViewController() else { return }
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: false, completion: nil)
+    }
+    
+    func configureManager() {
+
+        manager.activate { error in
+            guard error == nil else { return }
+
+            self.manager.setExposureNotificationEnabled(true) { error in
+                guard error == nil else { return }
+            }
+        }
     }
     
     
-    func centralManagerDidUpdateState(_ central: CBCentralManager) {
-        switch self.bluetoothManager?.state {
-        case .poweredOn:
-            switch ENManager.authorizationStatus {
-            case .authorized:
-                appState = .contactTracingOn
-                showContactTracingOn(withDetections: false)
-            default:
-                appState = .contactTracingOff
-                showContactTracingOff()
-            }
-        case .poweredOff:
-            appState = .contactTracingOff
+    func updateUI() {
+        switch appState {
+        case .contactTracingOn:
+            showContactTracingOn(withDetections: false)
+        case .bluetoothOff:
             showBluetoothOff()
-        case .unauthorized:
-            appState = .contactTracingOff
+        case .bluetoothDisabled:
             showBluetoothDisabled()
         default:
-            #if targetEnvironment(simulator)
-            appState = .contactTracingOff
-            showContactTracingOn(withDetections: false)
-            #else
-            appState = .contactTracingOff
-            showBluetoothUnknown()
-            #endif
-        }
-        
-        if appState == .contactTracingOn {
-            radarContainerView.enableTracing()
-        } else {
-            radarContainerView.disableTracing()
+            showContactTracingOff()
         }
     }
     
@@ -69,36 +78,43 @@ class MainViewController: UIViewController, CBCentralManagerDelegate {
         let storyboard = UIStoryboard.init(name: "ContactTracingEnabled", bundle: nil)
         guard let controller = storyboard.instantiateInitialViewController() else { return }
         addStateContentController(controller)
+        radarContainerView.enableTracing()
     }
     
     func showContactTracingOff() {
         let storyboard = UIStoryboard.init(name: "ContactTracingDisabled", bundle: nil)
         guard let controller = storyboard.instantiateInitialViewController() else { return }
         addStateContentController(controller)
+        radarContainerView.disableTracing()
     }
     
     func showBluetoothOff() {
         let storyboard = UIStoryboard.init(name: "BluetoothOff", bundle: nil)
         guard let controller = storyboard.instantiateInitialViewController() else { return }
         addStateContentController(controller)
+        radarContainerView.disableTracing()
     }
     
     func showBluetoothDisabled() {
         let storyboard = UIStoryboard.init(name: "BluetoothDisabled", bundle: nil)
         guard let controller = storyboard.instantiateInitialViewController() else { return }
         addStateContentController(controller)
+        radarContainerView.disableTracing()
     }
     
     func showBluetoothUnknown() {
         let storyboard = UIStoryboard.init(name: "BluetoothDisabled", bundle: nil)
         guard let controller = storyboard.instantiateInitialViewController() else { return }
         addStateContentController(controller)
+        radarContainerView.disableTracing()
     }
     
     private func addStateContentController(_ child: UIViewController) {
         if let currentChild = stateContentViewController {
             removeStateContentController(currentChild)
         }
+        
+        stateContentViewController = child
         
         addChild(child)
         statusContainerView.addSubview(child.view)
@@ -121,5 +137,74 @@ class MainViewController: UIViewController, CBCentralManagerDelegate {
         child.willMove(toParent: nil)
         child.view.removeFromSuperview()
         child.removeFromParent()
+    }
+    
+    // MARK: -
+    
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        switch self.bluetoothManager?.state {
+        case .poweredOn:
+            switch ENManager.authorizationStatus {
+            case .authorized:
+                appState = .contactTracingOn
+            default:
+                appState = .contactTracingOff
+            }
+        case .poweredOff:
+            appState = .bluetoothOff
+        case .unauthorized:
+            appState = .bluetoothDisabled
+        default:
+            #if targetEnvironment(simulator)
+            appState = .contactTracingOn
+            #else
+            appState = .contactTracingOff
+            #endif
+        }
+        
+        updateUI()
+    }
+    
+    func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
+        
+        switch peripheral.state {
+        case .poweredOn:
+            debugPrint("CB State: poweredOn")
+//            var keyData = Data(count: 16)
+//            let result = keyData.withUnsafeMutableBytes {
+//                (mutableBytes: UnsafeMutablePointer<UInt8>) -> Int32 in
+//                SecRandomCopyBytes(kSecRandomDefault, 16, mutableBytes)
+//            }
+//
+//            // Contact Detection service UUID
+//            let serviceUUID = CBUUID(string: "FD6F")
+//
+//            // Rolling Proximity Identifier
+//            let identifier: Data = keyData// 16 bytes
+//            let advertisementData: [String: Any] = [
+//                CBAdvertisementDataServiceUUIDsKey: [serviceUUID],
+//                CBAdvertisementDataServiceDataKey: identifier
+//            ]
+//
+//            peripheralManager.startAdvertising(advertisementData)
+            break
+        case .unknown:
+            debugPrint("CB State: unknown")
+            break
+        case .resetting:
+            debugPrint("CB State: resetting")
+            break
+        case .unsupported:
+            debugPrint("CB State: unsupported")
+            break
+        case .unauthorized:
+            debugPrint("CB State: unauthorized")
+            break
+        case .poweredOff:
+            debugPrint("CB State: poweredOff")
+            break
+        @unknown default:
+            break
+        }
     }
 }

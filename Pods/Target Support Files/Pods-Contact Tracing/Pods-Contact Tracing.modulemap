@@ -1,0 +1,6 @@
+framework module Pods_Contact_Tracing {
+  umbrella header "Pods-Contact Tracing-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C7BF08D73B5D6D54C3679C5C5651E8 /* HGRippleRadarView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D1D12E398D8A50812313FD05B12B4F5 /* HGRippleRadarView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09D2B6278E95F872325ABE87709C66B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		14B2974306866EA3F562C0985C6026D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		21E7A4FFFF34CBA4DEB75A8F3010B37F /* RadarViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02394A5F8AE70016B26A9664A3D8C0E /* RadarViewProtocol.swift */; };
+		2A9844FB3B86CA854496C144AB53853C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		37251A2B30756788825B3B9C8B37442D /* HGRippleRadarView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518874DFF8078D1F2BFAECED86BC6A /* HGRippleRadarView-dummy.m */; };
+		56A6C8E35F9B48C9316AE38153527DE5 /* Pods-Contact TracingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9234380FC081893F81BF1026CDDABE9 /* Pods-Contact TracingTests-dummy.m */; };
+		5E14AD38DC549083DB293E4DF2EB290B /* Pods-Contact Tracing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9273856CEC8BAC8026F52F3602218B /* Pods-Contact Tracing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7262C908828484AD97114266A45B9870 /* RippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70243969CF36D7D1EC4FEDD9874B298E /* RippleView.swift */; };
+		75C0FC929DCE64F484875B38B981B91E /* RadarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894F8FD6797985090DCF6364E4ADA91 /* RadarView.swift */; };
+		818FD836CA0B0B50CA0391104A6E2B38 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7087070E9319F0984851BCE1E1694E /* Geometry.swift */; };
+		A9DEAC14B5D7E2D4F5ECBDAD426121C1 /* Pods-Contact Tracing-Contact TracingUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82FD9103ED2B5120B9DB4B5B588C0790 /* Pods-Contact Tracing-Contact TracingUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAF7CBA5E1595C12537368012969CC48 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDFD5D65439D82D13400EC8CE82327C /* Item.swift */; };
+		ADC75C00C131734AEF3F32440DD8DE4F /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6BE3A2B98CD08D858342CEC987717 /* ItemView.swift */; };
+		B0626D7FA88BC7C4C96EAFD54515D7BF /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA5A9DFBFEB50852DE0354ED9BBCDD /* Drawer.swift */; };
+		BD71E2AB5A55FD4848E3184AD663D6B8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79636A5257B7080FDE4D9DB0717FB65A /* UIColor.swift */; };
+		C8BFE1612C90EBFBF9A62AA4881F039C /* Pods-Contact Tracing-Contact TracingUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E0941A48D84522771EB369C8BE295D9 /* Pods-Contact Tracing-Contact TracingUITests-dummy.m */; };
+		D269B40E9845EB701A3AB6BA223A8A16 /* Pods-Contact Tracing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E8C6EDD855197820A016E5C2DB6C58 /* Pods-Contact Tracing-dummy.m */; };
+		DB01464DD52F8DAB9994C9CD9348B84F /* Pods-Contact TracingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 751E07EE8889722DF76C0B67F11CBF47 /* Pods-Contact TracingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1DDADD2E4D1DA24F628BBC66EEDCB29 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C755DAB62BCC608381F8E48D7A4E8F /* Animation.swift */; };
+		F5107F9F24E5054D6836E5865CEE4890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		655A5E464CB742D8B7619C035BDD83F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD3A46F6BA83BC350FBC948C7F8D498F;
+			remoteInfo = HGRippleRadarView;
+		};
+		9F97AFC82E20AB501B45C4DB68EA1A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40231EF5ACB28EFB88698C0777D3D000;
+			remoteInfo = "Pods-Contact Tracing";
+		};
+		E6F9C9BF232EA5CEBAAAFECA50320A3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD3A46F6BA83BC350FBC948C7F8D498F;
+			remoteInfo = HGRippleRadarView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05799BF5E18E2406E184CA4920CDABA1 /* Pods-Contact Tracing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Contact Tracing.release.xcconfig"; sourceTree = "<group>"; };
+		0C7492CBF82D6BB6EFF9706A6FF3EC34 /* Pods-Contact Tracing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Contact Tracing-Info.plist"; sourceTree = "<group>"; };
+		0D9A1AC8F8B2537AB5802F59C3420F62 /* Pods-Contact TracingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Contact TracingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26FE659991E5EA2292CBB6A91AB2DDED /* Pods-Contact Tracing-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Contact Tracing-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3255982BA5B8C1177025D8DDBBFFD249 /* Pods_Contact_Tracing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contact_Tracing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A287045C0CC1C814C85AEDE6325FE0 /* Pods-Contact TracingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Contact TracingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		38C755DAB62BCC608381F8E48D7A4E8F /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = HGRippleRadarView/Classes/Utilities/Animation.swift; sourceTree = "<group>"; };
+		3E0941A48D84522771EB369C8BE295D9 /* Pods-Contact Tracing-Contact TracingUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Contact Tracing-Contact TracingUITests-dummy.m"; sourceTree = "<group>"; };
+		4443456237FCF41E62C23EA4DEDCA17C /* Pods-Contact Tracing-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Contact Tracing-frameworks.sh"; sourceTree = "<group>"; };
+		4790CBFA637DAAB8933FE8288EBB2145 /* Pods-Contact Tracing-Contact TracingUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Contact Tracing-Contact TracingUITests.modulemap"; sourceTree = "<group>"; };
+		48E8C6EDD855197820A016E5C2DB6C58 /* Pods-Contact Tracing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Contact Tracing-dummy.m"; sourceTree = "<group>"; };
+		50675B0984397A6AD941F37B5509D794 /* Pods-Contact Tracing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Contact Tracing.modulemap"; sourceTree = "<group>"; };
+		525AB477FB0B22E251113133E944F0F0 /* Pods-Contact TracingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Contact TracingTests.modulemap"; sourceTree = "<group>"; };
+		52DEE07DD026415658BF4AD709747FDC /* Pods_Contact_TracingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contact_TracingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58EA5A9DFBFEB50852DE0354ED9BBCDD /* Drawer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Drawer.swift; path = HGRippleRadarView/Classes/Utilities/Drawer.swift; sourceTree = "<group>"; };
+		6A235D363162BDD8DEC013D7AEAF98C4 /* HGRippleRadarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HGRippleRadarView.modulemap; sourceTree = "<group>"; };
+		6A518874DFF8078D1F2BFAECED86BC6A /* HGRippleRadarView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HGRippleRadarView-dummy.m"; sourceTree = "<group>"; };
+		6BF134821C3A4645DCA20623BDC55924 /* Pods-Contact TracingTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Contact TracingTests-Info.plist"; sourceTree = "<group>"; };
+		6C7F677ECC746AC5B5081C4CDB4C937E /* Pods-Contact Tracing-Contact TracingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Contact Tracing-Contact TracingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D7087070E9319F0984851BCE1E1694E /* Geometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Geometry.swift; path = HGRippleRadarView/Classes/Utilities/Geometry.swift; sourceTree = "<group>"; };
+		70243969CF36D7D1EC4FEDD9874B298E /* RippleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RippleView.swift; path = HGRippleRadarView/Classes/RippleView.swift; sourceTree = "<group>"; };
+		751E07EE8889722DF76C0B67F11CBF47 /* Pods-Contact TracingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Contact TracingTests-umbrella.h"; sourceTree = "<group>"; };
+		79636A5257B7080FDE4D9DB0717FB65A /* UIColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = HGRippleRadarView/Classes/Utilities/UIColor.swift; sourceTree = "<group>"; };
+		7A9273856CEC8BAC8026F52F3602218B /* Pods-Contact Tracing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Contact Tracing-umbrella.h"; sourceTree = "<group>"; };
+		7B8102096E2A2202D393C250B2C0067D /* Pods_Contact_Tracing_Contact_TracingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contact_Tracing_Contact_TracingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB26C2D2228AB88A21F043783ABB413 /* Pods-Contact TracingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Contact TracingTests.release.xcconfig"; sourceTree = "<group>"; };
+		82FD9103ED2B5120B9DB4B5B588C0790 /* Pods-Contact Tracing-Contact TracingUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Contact Tracing-Contact TracingUITests-umbrella.h"; sourceTree = "<group>"; };
+		8588FC5EFDC4D10A66F4C4C6818017BB /* HGRippleRadarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HGRippleRadarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB53C8F79FC557CC6D570927A9D5762 /* Pods-Contact Tracing-Contact TracingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Contact Tracing-Contact TracingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		991727769988AEAE32CBE6610EF1AF43 /* HGRippleRadarView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGRippleRadarView.release.xcconfig; sourceTree = "<group>"; };
+		9D1D12E398D8A50812313FD05B12B4F5 /* HGRippleRadarView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGRippleRadarView-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A02394A5F8AE70016B26A9664A3D8C0E /* RadarViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarViewProtocol.swift; path = HGRippleRadarView/Classes/RadarViewProtocol.swift; sourceTree = "<group>"; };
+		A7E4AD4BBCB9A412803D14302E9BA68B /* Pods-Contact Tracing-Contact TracingUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Contact Tracing-Contact TracingUITests-frameworks.sh"; sourceTree = "<group>"; };
+		AD3BBDC68599F21A231FFFD0DC0570D1 /* Pods-Contact TracingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Contact TracingTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B0C6BE3A2B98CD08D858342CEC987717 /* ItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemView.swift; path = HGRippleRadarView/Classes/ItemView.swift; sourceTree = "<group>"; };
+		B318F25626E718BEB182A9A59A807436 /* Pods-Contact Tracing-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Contact Tracing-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BDF2358409B5A05B2AFD59911E8638F8 /* Pods-Contact Tracing-Contact TracingUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Contact Tracing-Contact TracingUITests-Info.plist"; sourceTree = "<group>"; };
+		BE2B1B7C3198F28BE1C3A60FD0A9EE44 /* Pods-Contact Tracing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Contact Tracing.debug.xcconfig"; sourceTree = "<group>"; };
+		C4D5F1060C9153D9E82EEED519BDB846 /* HGRippleRadarView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HGRippleRadarView.debug.xcconfig; sourceTree = "<group>"; };
+		D2453A45E9B66D4DC772888F37F4CA80 /* HGRippleRadarView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HGRippleRadarView-prefix.pch"; sourceTree = "<group>"; };
+		E54A7F6D2E708C2F60DD0CA4E8FAFFFC /* Pods-Contact Tracing-Contact TracingUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Contact Tracing-Contact TracingUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E767919A392C9301B2CAC40EB84EFD60 /* HGRippleRadarView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HGRippleRadarView-Info.plist"; sourceTree = "<group>"; };
+		E894F8FD6797985090DCF6364E4ADA91 /* RadarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RadarView.swift; path = HGRippleRadarView/Classes/RadarView.swift; sourceTree = "<group>"; };
+		E9234380FC081893F81BF1026CDDABE9 /* Pods-Contact TracingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Contact TracingTests-dummy.m"; sourceTree = "<group>"; };
+		EFDFD5D65439D82D13400EC8CE82327C /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = HGRippleRadarView/Classes/Item.swift; sourceTree = "<group>"; };
+		FE8F4F343285010423EB03E1178B7934 /* Pods-Contact Tracing-Contact TracingUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Contact Tracing-Contact TracingUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ECB7BCEE4C6F6E4D0C51CB5651C4233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D2B6278E95F872325ABE87709C66B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C97E1FDD66DD8B7C5EF03586C666BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B2974306866EA3F562C0985C6026D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3F728FC5BEF79426A63C877A7287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9844FB3B86CA854496C144AB53853C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFDF804B8226BDB9FCE91CDC18DD900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5107F9F24E5054D6836E5865CEE4890 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		214A6F962034FA19467F9FB0D3A2534C /* Pods-Contact Tracing */ = {
+			isa = PBXGroup;
+			children = (
+				50675B0984397A6AD941F37B5509D794 /* Pods-Contact Tracing.modulemap */,
+				B318F25626E718BEB182A9A59A807436 /* Pods-Contact Tracing-acknowledgements.markdown */,
+				26FE659991E5EA2292CBB6A91AB2DDED /* Pods-Contact Tracing-acknowledgements.plist */,
+				48E8C6EDD855197820A016E5C2DB6C58 /* Pods-Contact Tracing-dummy.m */,
+				4443456237FCF41E62C23EA4DEDCA17C /* Pods-Contact Tracing-frameworks.sh */,
+				0C7492CBF82D6BB6EFF9706A6FF3EC34 /* Pods-Contact Tracing-Info.plist */,
+				7A9273856CEC8BAC8026F52F3602218B /* Pods-Contact Tracing-umbrella.h */,
+				BE2B1B7C3198F28BE1C3A60FD0A9EE44 /* Pods-Contact Tracing.debug.xcconfig */,
+				05799BF5E18E2406E184CA4920CDABA1 /* Pods-Contact Tracing.release.xcconfig */,
+			);
+			name = "Pods-Contact Tracing";
+			path = "Target Support Files/Pods-Contact Tracing";
+			sourceTree = "<group>";
+		};
+		8035F6E2A11A4F336FC26D043030DB3A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				214A6F962034FA19467F9FB0D3A2534C /* Pods-Contact Tracing */,
+				C0832EE11C9AB3F0A808A9917823D9FF /* Pods-Contact Tracing-Contact TracingUITests */,
+				92CB6318FC122156C589E5EB8C69B182 /* Pods-Contact TracingTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8D71D3725E22343C7D38365566A199E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8588FC5EFDC4D10A66F4C4C6818017BB /* HGRippleRadarView.framework */,
+				3255982BA5B8C1177025D8DDBBFFD249 /* Pods_Contact_Tracing.framework */,
+				7B8102096E2A2202D393C250B2C0067D /* Pods_Contact_Tracing_Contact_TracingUITests.framework */,
+				52DEE07DD026415658BF4AD709747FDC /* Pods_Contact_TracingTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92CB6318FC122156C589E5EB8C69B182 /* Pods-Contact TracingTests */ = {
+			isa = PBXGroup;
+			children = (
+				525AB477FB0B22E251113133E944F0F0 /* Pods-Contact TracingTests.modulemap */,
+				0D9A1AC8F8B2537AB5802F59C3420F62 /* Pods-Contact TracingTests-acknowledgements.markdown */,
+				AD3BBDC68599F21A231FFFD0DC0570D1 /* Pods-Contact TracingTests-acknowledgements.plist */,
+				E9234380FC081893F81BF1026CDDABE9 /* Pods-Contact TracingTests-dummy.m */,
+				6BF134821C3A4645DCA20623BDC55924 /* Pods-Contact TracingTests-Info.plist */,
+				751E07EE8889722DF76C0B67F11CBF47 /* Pods-Contact TracingTests-umbrella.h */,
+				35A287045C0CC1C814C85AEDE6325FE0 /* Pods-Contact TracingTests.debug.xcconfig */,
+				7EB26C2D2228AB88A21F043783ABB413 /* Pods-Contact TracingTests.release.xcconfig */,
+			);
+			name = "Pods-Contact TracingTests";
+			path = "Target Support Files/Pods-Contact TracingTests";
+			sourceTree = "<group>";
+		};
+		C0832EE11C9AB3F0A808A9917823D9FF /* Pods-Contact Tracing-Contact TracingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4790CBFA637DAAB8933FE8288EBB2145 /* Pods-Contact Tracing-Contact TracingUITests.modulemap */,
+				E54A7F6D2E708C2F60DD0CA4E8FAFFFC /* Pods-Contact Tracing-Contact TracingUITests-acknowledgements.markdown */,
+				FE8F4F343285010423EB03E1178B7934 /* Pods-Contact Tracing-Contact TracingUITests-acknowledgements.plist */,
+				3E0941A48D84522771EB369C8BE295D9 /* Pods-Contact Tracing-Contact TracingUITests-dummy.m */,
+				A7E4AD4BBCB9A412803D14302E9BA68B /* Pods-Contact Tracing-Contact TracingUITests-frameworks.sh */,
+				BDF2358409B5A05B2AFD59911E8638F8 /* Pods-Contact Tracing-Contact TracingUITests-Info.plist */,
+				82FD9103ED2B5120B9DB4B5B588C0790 /* Pods-Contact Tracing-Contact TracingUITests-umbrella.h */,
+				6C7F677ECC746AC5B5081C4CDB4C937E /* Pods-Contact Tracing-Contact TracingUITests.debug.xcconfig */,
+				8FB53C8F79FC557CC6D570927A9D5762 /* Pods-Contact Tracing-Contact TracingUITests.release.xcconfig */,
+			);
+			name = "Pods-Contact Tracing-Contact TracingUITests";
+			path = "Target Support Files/Pods-Contact Tracing-Contact TracingUITests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C707B0743DE67C0E68A123059798310B /* HGRippleRadarView */ = {
+			isa = PBXGroup;
+			children = (
+				38C755DAB62BCC608381F8E48D7A4E8F /* Animation.swift */,
+				58EA5A9DFBFEB50852DE0354ED9BBCDD /* Drawer.swift */,
+				6D7087070E9319F0984851BCE1E1694E /* Geometry.swift */,
+				EFDFD5D65439D82D13400EC8CE82327C /* Item.swift */,
+				B0C6BE3A2B98CD08D858342CEC987717 /* ItemView.swift */,
+				E894F8FD6797985090DCF6364E4ADA91 /* RadarView.swift */,
+				A02394A5F8AE70016B26A9664A3D8C0E /* RadarViewProtocol.swift */,
+				70243969CF36D7D1EC4FEDD9874B298E /* RippleView.swift */,
+				79636A5257B7080FDE4D9DB0717FB65A /* UIColor.swift */,
+				DCDC728CC71AAD75075637212D8A6063 /* Support Files */,
+			);
+			path = HGRippleRadarView;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DD4E565CED83F06C73DFB986CAE8DE76 /* Pods */,
+				8D71D3725E22343C7D38365566A199E8 /* Products */,
+				8035F6E2A11A4F336FC26D043030DB3A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCDC728CC71AAD75075637212D8A6063 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A235D363162BDD8DEC013D7AEAF98C4 /* HGRippleRadarView.modulemap */,
+				6A518874DFF8078D1F2BFAECED86BC6A /* HGRippleRadarView-dummy.m */,
+				E767919A392C9301B2CAC40EB84EFD60 /* HGRippleRadarView-Info.plist */,
+				D2453A45E9B66D4DC772888F37F4CA80 /* HGRippleRadarView-prefix.pch */,
+				9D1D12E398D8A50812313FD05B12B4F5 /* HGRippleRadarView-umbrella.h */,
+				C4D5F1060C9153D9E82EEED519BDB846 /* HGRippleRadarView.debug.xcconfig */,
+				991727769988AEAE32CBE6610EF1AF43 /* HGRippleRadarView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HGRippleRadarView";
+			sourceTree = "<group>";
+		};
+		DD4E565CED83F06C73DFB986CAE8DE76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C707B0743DE67C0E68A123059798310B /* HGRippleRadarView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		32A76EF05A57F9DEBBEF013CA8E89868 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB01464DD52F8DAB9994C9CD9348B84F /* Pods-Contact TracingTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45CA74467A40DFBEC30D5235A44D8C17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E14AD38DC549083DB293E4DF2EB290B /* Pods-Contact Tracing-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C622C9CF96CFDB4B9945625694E0AB0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DEAC14B5D7E2D4F5ECBDAD426121C1 /* Pods-Contact Tracing-Contact TracingUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6339815499898AE42A0A76C58380793 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C7BF08D73B5D6D54C3679C5C5651E8 /* HGRippleRadarView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40231EF5ACB28EFB88698C0777D3D000 /* Pods-Contact Tracing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CED6F2620D0AB6C638450B929272003 /* Build configuration list for PBXNativeTarget "Pods-Contact Tracing" */;
+			buildPhases = (
+				45CA74467A40DFBEC30D5235A44D8C17 /* Headers */,
+				3945BA2BA91659D6FF3A8C93C4F96958 /* Sources */,
+				80C97E1FDD66DD8B7C5EF03586C666BC /* Frameworks */,
+				A733E6B1CDC07EFBF95EFFD9638724FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87554CA860E824E4D96D9E2FFB17F8F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-Contact Tracing";
+			productName = "Pods-Contact Tracing";
+			productReference = 3255982BA5B8C1177025D8DDBBFFD249 /* Pods_Contact_Tracing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		873E67A562680B72BC996AA1CE54DC58 /* Pods-Contact TracingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 296AF86960D8678E6BC3CC88A2EEAFB5 /* Build configuration list for PBXNativeTarget "Pods-Contact TracingTests" */;
+			buildPhases = (
+				32A76EF05A57F9DEBBEF013CA8E89868 /* Headers */,
+				E4FEC4471747C6C08925A4DC2F5CDC75 /* Sources */,
+				5ECB7BCEE4C6F6E4D0C51CB5651C4233 /* Frameworks */,
+				07621BA81B7B0C618C2A1900497B3B6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2557BFC805606286167B77384F8E66B /* PBXTargetDependency */,
+			);
+			name = "Pods-Contact TracingTests";
+			productName = "Pods-Contact TracingTests";
+			productReference = 52DEE07DD026415658BF4AD709747FDC /* Pods_Contact_TracingTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD3A46F6BA83BC350FBC948C7F8D498F /* HGRippleRadarView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0AB39C96DFE52FA82CBB2AFECD01614 /* Build configuration list for PBXNativeTarget "HGRippleRadarView" */;
+			buildPhases = (
+				D6339815499898AE42A0A76C58380793 /* Headers */,
+				D8E8BB21C93E9F9746E2F68334A8C709 /* Sources */,
+				B5A3F728FC5BEF79426A63C877A7287E /* Frameworks */,
+				27E324F0A0EC7CBA44C7BCF1304221DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HGRippleRadarView;
+			productName = HGRippleRadarView;
+			productReference = 8588FC5EFDC4D10A66F4C4C6818017BB /* HGRippleRadarView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCF1D9C8C742464F8CE7381B43FDDA90 /* Pods-Contact Tracing-Contact TracingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0832CAEE7120167410C3E80A3662318F /* Build configuration list for PBXNativeTarget "Pods-Contact Tracing-Contact TracingUITests" */;
+			buildPhases = (
+				C622C9CF96CFDB4B9945625694E0AB0E /* Headers */,
+				46EE899DFFD07611D39B7C4F732E687B /* Sources */,
+				EFFDF804B8226BDB9FCE91CDC18DD900 /* Frameworks */,
+				9E4F4CE9B0FBE53FFA53E1C4487477DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96797DCB6D9D9578AB46F9E1F22A7552 /* PBXTargetDependency */,
+			);
+			name = "Pods-Contact Tracing-Contact TracingUITests";
+			productName = "Pods-Contact Tracing-Contact TracingUITests";
+			productReference = 7B8102096E2A2202D393C250B2C0067D /* Pods_Contact_Tracing_Contact_TracingUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					AD3A46F6BA83BC350FBC948C7F8D498F = {
+						LastSwiftMigration = 1150;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8D71D3725E22343C7D38365566A199E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD3A46F6BA83BC350FBC948C7F8D498F /* HGRippleRadarView */,
+				40231EF5ACB28EFB88698C0777D3D000 /* Pods-Contact Tracing */,
+				BCF1D9C8C742464F8CE7381B43FDDA90 /* Pods-Contact Tracing-Contact TracingUITests */,
+				873E67A562680B72BC996AA1CE54DC58 /* Pods-Contact TracingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07621BA81B7B0C618C2A1900497B3B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E324F0A0EC7CBA44C7BCF1304221DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E4F4CE9B0FBE53FFA53E1C4487477DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A733E6B1CDC07EFBF95EFFD9638724FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3945BA2BA91659D6FF3A8C93C4F96958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D269B40E9845EB701A3AB6BA223A8A16 /* Pods-Contact Tracing-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EE899DFFD07611D39B7C4F732E687B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BFE1612C90EBFBF9A62AA4881F039C /* Pods-Contact Tracing-Contact TracingUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E8BB21C93E9F9746E2F68334A8C709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1DDADD2E4D1DA24F628BBC66EEDCB29 /* Animation.swift in Sources */,
+				B0626D7FA88BC7C4C96EAFD54515D7BF /* Drawer.swift in Sources */,
+				818FD836CA0B0B50CA0391104A6E2B38 /* Geometry.swift in Sources */,
+				37251A2B30756788825B3B9C8B37442D /* HGRippleRadarView-dummy.m in Sources */,
+				AAF7CBA5E1595C12537368012969CC48 /* Item.swift in Sources */,
+				ADC75C00C131734AEF3F32440DD8DE4F /* ItemView.swift in Sources */,
+				75C0FC929DCE64F484875B38B981B91E /* RadarView.swift in Sources */,
+				21E7A4FFFF34CBA4DEB75A8F3010B37F /* RadarViewProtocol.swift in Sources */,
+				7262C908828484AD97114266A45B9870 /* RippleView.swift in Sources */,
+				BD71E2AB5A55FD4848E3184AD663D6B8 /* UIColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FEC4471747C6C08925A4DC2F5CDC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A6C8E35F9B48C9316AE38153527DE5 /* Pods-Contact TracingTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87554CA860E824E4D96D9E2FFB17F8F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HGRippleRadarView;
+			target = AD3A46F6BA83BC350FBC948C7F8D498F /* HGRippleRadarView */;
+			targetProxy = 655A5E464CB742D8B7619C035BDD83F8 /* PBXContainerItemProxy */;
+		};
+		96797DCB6D9D9578AB46F9E1F22A7552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HGRippleRadarView;
+			target = AD3A46F6BA83BC350FBC948C7F8D498F /* HGRippleRadarView */;
+			targetProxy = E6F9C9BF232EA5CEBAAAFECA50320A3C /* PBXContainerItemProxy */;
+		};
+		D2557BFC805606286167B77384F8E66B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Contact Tracing";
+			target = 40231EF5ACB28EFB88698C0777D3D000 /* Pods-Contact Tracing */;
+			targetProxy = 9F97AFC82E20AB501B45C4DB68EA1A38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E08E467764CD30349D3F3D079C78215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991727769988AEAE32CBE6610EF1AF43 /* HGRippleRadarView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HGRippleRadarView/HGRippleRadarView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HGRippleRadarView/HGRippleRadarView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HGRippleRadarView/HGRippleRadarView.modulemap";
+				PRODUCT_MODULE_NAME = HGRippleRadarView;
+				PRODUCT_NAME = HGRippleRadarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		70BE595CA460745F090D7EC930553B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A287045C0CC1C814C85AEDE6325FE0 /* Pods-Contact TracingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Contact TracingTests/Pods-Contact TracingTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Contact TracingTests/Pods-Contact TracingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A49653C3DF2895EDBCF04E5357E7AB02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE2B1B7C3198F28BE1C3A60FD0A9EE44 /* Pods-Contact Tracing.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Contact Tracing/Pods-Contact Tracing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Contact Tracing/Pods-Contact Tracing.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEF69E822B79DEA988C913E4AC1B27F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB53C8F79FC557CC6D570927A9D5762 /* Pods-Contact Tracing-Contact TracingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Contact Tracing-Contact TracingUITests/Pods-Contact Tracing-Contact TracingUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Contact Tracing-Contact TracingUITests/Pods-Contact Tracing-Contact TracingUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9A9D0B197D600CBCA339376D5E9AC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB26C2D2228AB88A21F043783ABB413 /* Pods-Contact TracingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Contact TracingTests/Pods-Contact TracingTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Contact TracingTests/Pods-Contact TracingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEEDCFEFD8909207F351E912CC6AFDDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D5F1060C9153D9E82EEED519BDB846 /* HGRippleRadarView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HGRippleRadarView/HGRippleRadarView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HGRippleRadarView/HGRippleRadarView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HGRippleRadarView/HGRippleRadarView.modulemap";
+				PRODUCT_MODULE_NAME = HGRippleRadarView;
+				PRODUCT_NAME = HGRippleRadarView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E482C2D429480EC0148F9CB9A177A849 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C7F677ECC746AC5B5081C4CDB4C937E /* Pods-Contact Tracing-Contact TracingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Contact Tracing-Contact TracingUITests/Pods-Contact Tracing-Contact TracingUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Contact Tracing-Contact TracingUITests/Pods-Contact Tracing-Contact TracingUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F19ED5371E5FFF54D30DE2C16AC62CD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05799BF5E18E2406E184CA4920CDABA1 /* Pods-Contact Tracing.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Contact Tracing/Pods-Contact Tracing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Contact Tracing/Pods-Contact Tracing.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0832CAEE7120167410C3E80A3662318F /* Build configuration list for PBXNativeTarget "Pods-Contact Tracing-Contact TracingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E482C2D429480EC0148F9CB9A177A849 /* Debug */,
+				AEF69E822B79DEA988C913E4AC1B27F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		296AF86960D8678E6BC3CC88A2EEAFB5 /* Build configuration list for PBXNativeTarget "Pods-Contact TracingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70BE595CA460745F090D7EC930553B70 /* Debug */,
+				C9A9D0B197D600CBCA339376D5E9AC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */,
+				7DC5F11AFBEAE473E8D3C24A2D11338D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CED6F2620D0AB6C638450B929272003 /* Build configuration list for PBXNativeTarget "Pods-Contact Tracing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A49653C3DF2895EDBCF04E5357E7AB02 /* Debug */,
+				F19ED5371E5FFF54D30DE2C16AC62CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0AB39C96DFE52FA82CBB2AFECD01614 /* Build configuration list for PBXNativeTarget "HGRippleRadarView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEEDCFEFD8909207F351E912CC6AFDDB /* Debug */,
+				4E08E467764CD30349D3F3D079C78215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
