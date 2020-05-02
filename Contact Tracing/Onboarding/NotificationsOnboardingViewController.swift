@@ -11,8 +11,11 @@ import UIKit
 
 class NotificationsOnboardingViewController: UIViewController {
 
-    @IBOutlet weak var enableNotificationsView: UIView!
-    @IBOutlet weak var notificationsNotEnabledView: UIView!
+    @IBOutlet weak var notificationBadgeView: DesignableView!
+    @IBOutlet weak var notificationImageView: DesignableImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var openSettingsButton: UIButton!
     @IBOutlet weak var actionButton: PillButton!
 
@@ -34,17 +37,34 @@ class NotificationsOnboardingViewController: UIViewController {
         case .notDetermined:
             requestNotificationsPermission()
         case .denied:
-            self.navigationController?.dismiss(animated: false, completion: nil)
+            self.presentMainViewController()
         }
     }
 }
 
 // MARK: - UI
 extension NotificationsOnboardingViewController {
-    private func updateUI() {
+    private func updateUIForRequestPermission() {
         DispatchQueue.main.async {
-            self.enableNotificationsView.isHidden = true
-            self.notificationsNotEnabledView.isHidden = false
+            self.notificationBadgeView.isHidden = false
+            self.notificationImageView.image = UIImage(named: "notifications-bell-white")
+            self.notificationImageView.backgroundColor = UIColor(named: "dark-card-background-color")
+            self.titleLabel.text = "Enable notifications"
+            self.messageLabel.isHidden = true
+            self.openSettingsButton.isHidden = true
+            self.actionButton.setTitle("Enable Notifications", for: .normal)
+        }
+    }
+
+    private func updateUIForDeniedPermission() {
+        DispatchQueue.main.async {
+            self.notificationBadgeView.isHidden = true
+            self.notificationImageView.tintColor = UIColor.label
+            self.notificationImageView.image = UIImage(named: "notifications-bell-off")
+            self.notificationImageView.backgroundColor = UIColor.secondarySystemBackground
+            self.titleLabel.text = "Please enable notifications"
+            self.messageLabel.isHidden = false
+            self.openSettingsButton.isHidden = false
             self.actionButton.setTitle("Continue", for: .normal)
         }
     }
@@ -55,10 +75,9 @@ extension NotificationsOnboardingViewController {
     private func requestNotificationsPermission() {
         NotificationManager.shared.requestAuthorisation { (granted, error) in
             if granted {
-                // TODO: Move to next screen
-                return
+                self.presentMainViewController()
             } else {
-                self.updateUI()
+                self.updateUIForDeniedPermission()
             }
         }
     }
@@ -70,12 +89,25 @@ extension NotificationsOnboardingViewController {
                 self.notificationPermissionState = .authorized
             case .denied:
                 self.notificationPermissionState = .denied
-                self.updateUI()
+                self.updateUIForDeniedPermission()
             case .provisional, .notDetermined:
+                self.updateUIForRequestPermission()
                 break
             @unknown default:
                 break
             }
+        }
+    }
+}
+
+// MARK: - Presenting
+extension NotificationsOnboardingViewController {
+    func presentMainViewController() {
+        DispatchQueue.main.async {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            guard let viewController = storyboard.instantiateInitialViewController() else { return }
+            viewController.modalPresentationStyle = .fullScreen
+            self.present(viewController, animated: true, completion: nil)
         }
     }
 }
