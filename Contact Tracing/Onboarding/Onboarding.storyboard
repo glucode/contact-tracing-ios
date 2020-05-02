@@ -265,7 +265,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riz-Tk-U2D" customClass="UnderlinedButton" customModule="Contact_Tracing" customModuleProvider="target">
-                                        <rect key="frame" x="172" y="339.66666666666669" width="30" height="30"/>
+                                        <rect key="frame" x="138" y="339.66666666666669" width="98" height="30"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="attributedString" value="Open Settings"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
