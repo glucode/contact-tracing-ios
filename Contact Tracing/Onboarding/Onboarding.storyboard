@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding Main View Controller-->
         <scene sceneID="PXy-Y4-WUX">
             <objects>
-                <viewController id="HW6-oa-hYz" sceneMemberID="viewController">
+                <viewController id="HW6-oa-hYz" customClass="OnboardingMainViewController" customModule="Contact_Tracing" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rzT-tF-Mur">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,9 @@
                         <viewLayoutGuide key="safeArea" id="iOZ-3l-Nd4"/>
                     </view>
                     <navigationItem key="navigationItem" id="OgF-dG-996"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="3OE-Yd-0lh" id="qey-bi-JF1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRj-zP-wTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
