@@ -2,15 +2,20 @@ PODS:
   - HGRippleRadarView (0.1.2)
 
 DEPENDENCIES:
-  - HGRippleRadarView
+  - HGRippleRadarView (from `https://github.com/glucode/HGRippleRadarView.git`)
 
-SPEC REPOS:
-  trunk:
-    - HGRippleRadarView
+EXTERNAL SOURCES:
+  HGRippleRadarView:
+    :git: https://github.com/glucode/HGRippleRadarView.git
+
+CHECKOUT OPTIONS:
+  HGRippleRadarView:
+    :commit: 071891a7024dfba15cce99d4bec3be58794259fd
+    :git: https://github.com/glucode/HGRippleRadarView.git
 
 SPEC CHECKSUMS:
-  HGRippleRadarView: 5379e27634c09222ebc836671c7425ad7b257cc4
+  HGRippleRadarView: 0f28d0bfab34fe1969f1178c0dfd4e84dfbd4f99
 
-PODFILE CHECKSUM: b665638a196d9ac9b489eaafbadfbc99d6244520
+PODFILE CHECKSUM: 690024af11e8f27f4cb017bf5e8cfd8713b97c4c
 
 COCOAPODS: 1.9.1
