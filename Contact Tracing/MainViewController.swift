@@ -18,8 +18,6 @@ enum AppState {
 }
 
 class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate {
-
-    
     let peripheralManager = CBPeripheralManager()
     let manager = ENManager()
 
@@ -30,6 +28,8 @@ class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
     @IBOutlet weak var statusContainerView: UIView!
     @IBOutlet weak var radarContainerView: RadarView!
     
+    private var shouldShowOnboarding = true
+    
     override func viewDidLoad() {
 //        bluetoothManager = CBCentralManager(delegate: self, queue: nil, options: nil)
 //        peripheralManager.delegate = self
@@ -37,12 +37,17 @@ class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        showOnboarding()
+        
+        if shouldShowOnboarding {
+            showOnboarding()
+        }
+        
         configureManager()
         updateUI()
     }
     
     func showOnboarding() {
+        shouldShowOnboarding = false
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         guard let controller = storyboard.instantiateInitialViewController() else { return }
         controller.modalPresentationStyle = .fullScreen
@@ -162,6 +167,7 @@ class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
             #endif
         }
         
+        appState = .contactTracingOn
         updateUI()
     }
     
