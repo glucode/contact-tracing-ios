@@ -16,10 +16,23 @@ class ExplanationOnboardingViewController: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        let starAnimation = Animation.named("ContactTracing_Onboarding_1")
+        showStepOne()
+    }
+    
+    private func showStepOne() {
+        if isDarkMode {
+            animationView.animation = Animation.named("how-works-step1-dark")
+        } else {
+            animationView.animation = Animation.named("how-works-step1-light")
+        }
         
-        animationView.animation = starAnimation
         animationView.play()
     }
     
+}
+
+extension UIViewController {
+    var isDarkMode: Bool {
+        return self.traitCollection.userInterfaceStyle == .dark
+    }
 }
