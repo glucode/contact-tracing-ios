@@ -89,3 +89,6 @@ fastlane/test_output
 
 iOSInjectionProject/
 .DS_Store
+/Pods/Pods.xcodeproj/project.pbxproj
+/Pods/Manifest.lock
+/Pods/Local Podspecs
