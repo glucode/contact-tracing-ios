@@ -39,10 +39,6 @@
 		FA5AE723245C5AAF005A59BE /* UIImageView+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */; };
 		FA5AE726245C6E74005A59BE /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE725245C6E74005A59BE /* UIApplication+Extension.swift */; };
 		FA5AE729245C704E005A59BE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE728245C704E005A59BE /* NotificationManager.swift */; };
-		FA5AE72C245C93D3005A59BE /* UIButton+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE72B245C93D3005A59BE /* UIButton+Designable.swift */; };
-		FA5AE72D245C9A2E005A59BE /* NotificationsOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5959E245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift */; };
-		FA5AE72F245D6914005A59BE /* OnboardingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE72E245D6914005A59BE /* OnboardingMainViewController.swift */; };
-		FA5AE732245D6EDB005A59BE /* CountryName.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA5AE731245D6EDB005A59BE /* CountryName.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,9 +103,6 @@
 		FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Designable.swift"; sourceTree = "<group>"; };
 		FA5AE725245C6E74005A59BE /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		FA5AE728245C704E005A59BE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		FA5AE72B245C93D3005A59BE /* UIButton+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Designable.swift"; sourceTree = "<group>"; };
-		FA5AE72E245D6914005A59BE /* OnboardingMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingMainViewController.swift; sourceTree = "<group>"; };
-		FA5AE731245D6EDB005A59BE /* CountryName.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CountryName.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,7 +257,6 @@
 				03A595AA245D75E100B9AA56 /* how-works-step1-dark.json */,
 				03A595A6245C5F3300B9AA56 /* how-works-step1-light.json */,
 				03A5959A245C2B9200B9AA56 /* Onboarding.storyboard */,
-				FA5AE72E245D6914005A59BE /* OnboardingMainViewController.swift */,
 				03A5959C245C350000B9AA56 /* BluetoothOnboardingViewController.swift */,
 				03A5959E245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift */,
 				03A595A8245C5FE900B9AA56 /* ExplanationOnboardingViewController.swift */,
@@ -300,7 +292,6 @@
 			children = (
 				FA5AE720245C5877005A59BE /* UIView+Designable.swift */,
 				FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */,
-				FA5AE72B245C93D3005A59BE /* UIButton+Designable.swift */,
 			);
 			path = Designables;
 			sourceTree = "<group>";
@@ -434,7 +425,6 @@
 				03A595AB245D75E200B9AA56 /* how-works-step1-dark.json in Resources */,
 				03A59556245A252700B9AA56 /* LaunchScreen.storyboard in Resources */,
 				03A5958C245AD90400B9AA56 /* BluetoothDisabled.storyboard in Resources */,
-				FA5AE732245D6EDB005A59BE /* CountryName.plist in Resources */,
 				03A5958E245ADE1200B9AA56 /* BluetoothUnknown.storyboard in Resources */,
 				03A595A7245C5F3300B9AA56 /* how-works-step1-light.json in Resources */,
 				03A59590245AE0D600B9AA56 /* ContactTracingEnabled.storyboard in Resources */,
@@ -570,16 +560,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5AE723245C5AAF005A59BE /* UIImageView+Designable.swift in Sources */,
-				FA5AE72F245D6914005A59BE /* OnboardingMainViewController.swift in Sources */,
 				03A59582245A5EEC00B9AA56 /* ContactTracingOffViewController.swift in Sources */,
-				FA5AE72D245C9A2E005A59BE /* NotificationsOnboardingViewController.swift in Sources */,
 				03A595A9245C5FE900B9AA56 /* ExplanationOnboardingViewController.swift in Sources */,
 				03A5957E245A4FB300B9AA56 /* PillButton.swift in Sources */,
+				03A5959F245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift in Sources */,
 				03A5957A245A26EF00B9AA56 /* MainViewController.swift in Sources */,
 				03A5954A245A252600B9AA56 /* AppDelegate.swift in Sources */,
 				FA5AE726245C6E74005A59BE /* UIApplication+Extension.swift in Sources */,
 				03A59592245AE2AB00B9AA56 /* RadarView.swift in Sources */,
-				FA5AE72C245C93D3005A59BE /* UIButton+Designable.swift in Sources */,
 				03A5954C245A252600B9AA56 /* SceneDelegate.swift in Sources */,
 				03A5958A245AD0AD00B9AA56 /* BluetoothDisabledViewController.swift in Sources */,
 				FA5AE721245C5877005A59BE /* UIView+Designable.swift in Sources */,
