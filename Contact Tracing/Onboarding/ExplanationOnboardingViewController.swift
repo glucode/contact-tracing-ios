@@ -35,7 +35,7 @@ class ExplanationOnboardingViewController: UIViewController {
         if stepCounter < 5 {
             self._stepCounter += 1
         } else {
-            performSegue(withIdentifier: "onboardingStepComplete", sender: nil)
+            performSegue(withIdentifier: "explanationComplete", sender: nil)
         }
     }
 

@@ -136,7 +136,7 @@
                         <outlet property="animationView" destination="bOK-Hi-vKh" id="zZS-rQ-yWn"/>
                         <outlet property="descriptionLabel" destination="MiC-So-wba" id="Cc0-lQ-8ga"/>
                         <outlet property="descriptionLabelBottomConstraint" destination="eOl-7S-Fj2" id="H29-JM-01x"/>
-                        <segue destination="pUV-SP-CCN" kind="show" identifier="onboardingStepComplete" id="hy1-FU-XKV"/>
+                        <segue destination="pUV-SP-CCN" kind="show" identifier="explanationComplete" id="hy1-FU-XKV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eE0-0j-y8T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
