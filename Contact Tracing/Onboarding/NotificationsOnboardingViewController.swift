@@ -92,7 +92,6 @@ extension NotificationsOnboardingViewController {
                 self.updateUIForDeniedPermission()
             case .provisional, .notDetermined:
                 self.updateUIForRequestPermission()
-                break
             @unknown default:
                 break
             }
