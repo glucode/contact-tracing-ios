@@ -301,6 +301,67 @@
                                     <action selector="actionButtonPressed:" destination="Kjx-wf-whz" eventType="touchUpInside" id="FCR-8a-E19"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJe-RK-orS" userLabel="Notifications Not Enabled View">
+                                <rect key="frame" x="20" y="44" width="374" height="369.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notifications-bell-off" translatesAutoresizingMaskIntoConstraints="NO" id="qSM-2F-eIe" customClass="DesignableImageView" customModule="Contact_Tracing" customModuleProvider="target">
+                                        <rect key="frame" x="159" y="115" width="56" height="56"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="33a-Fz-CqT"/>
+                                            <constraint firstAttribute="width" secondItem="qSM-2F-eIe" secondAttribute="height" multiplier="1:1" id="DVU-FH-CM3"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woJ-9R-cHI">
+                                        <rect key="frame" x="77" y="220" width="220" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In order to receive important updates, you’ll need to enable notifications." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzo-67-lRT">
+                                        <rect key="frame" x="20" y="249" width="334" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications can be configured in Settings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbc-Ao-yBl">
+                                        <rect key="frame" x="56.333333333333343" y="300" width="261.66666666666663" height="15.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MER-wB-Sdj" customClass="UnderlinedButton" customModule="Contact_Tracing" customModuleProvider="target">
+                                        <rect key="frame" x="138" y="339.66666666666669" width="98" height="30"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="attributedString" value="Open Settings"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onOpenSettingsTap:" destination="Kjx-wf-whz" eventType="touchUpInside" id="mvl-eE-DkS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="fzo-67-lRT" firstAttribute="top" secondItem="woJ-9R-cHI" secondAttribute="bottom" constant="8" id="5kn-Ir-BLS"/>
+                                    <constraint firstItem="fzo-67-lRT" firstAttribute="centerX" secondItem="oJe-RK-orS" secondAttribute="centerX" id="7Wk-Zt-sPq"/>
+                                    <constraint firstItem="qSM-2F-eIe" firstAttribute="top" secondItem="oJe-RK-orS" secondAttribute="top" constant="115" id="A1a-1J-Pnc"/>
+                                    <constraint firstItem="MER-wB-Sdj" firstAttribute="centerX" secondItem="oJe-RK-orS" secondAttribute="centerX" id="AXh-gt-ux2"/>
+                                    <constraint firstAttribute="trailing" secondItem="fzo-67-lRT" secondAttribute="trailing" constant="20" id="Caw-5i-ave"/>
+                                    <constraint firstItem="woJ-9R-cHI" firstAttribute="top" secondItem="qSM-2F-eIe" secondAttribute="bottom" constant="49" id="H3z-Po-cIj"/>
+                                    <constraint firstItem="wbc-Ao-yBl" firstAttribute="centerX" secondItem="oJe-RK-orS" secondAttribute="centerX" id="HJr-Nc-mi6"/>
+                                    <constraint firstItem="wbc-Ao-yBl" firstAttribute="top" secondItem="fzo-67-lRT" secondAttribute="bottom" constant="15" id="IRB-j4-rba"/>
+                                    <constraint firstAttribute="bottom" secondItem="MER-wB-Sdj" secondAttribute="bottom" id="V1y-zk-VIN"/>
+                                    <constraint firstItem="woJ-9R-cHI" firstAttribute="centerX" secondItem="oJe-RK-orS" secondAttribute="centerX" id="VQ5-TZ-0Ae"/>
+                                    <constraint firstItem="qSM-2F-eIe" firstAttribute="centerX" secondItem="oJe-RK-orS" secondAttribute="centerX" id="nyN-uM-sh9"/>
+                                    <constraint firstItem="fzo-67-lRT" firstAttribute="leading" secondItem="oJe-RK-orS" secondAttribute="leading" constant="20" id="xjI-lw-Oiw"/>
+                                    <constraint firstItem="MER-wB-Sdj" firstAttribute="top" secondItem="wbc-Ao-yBl" secondAttribute="bottom" constant="24" id="yt0-0I-pba"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
