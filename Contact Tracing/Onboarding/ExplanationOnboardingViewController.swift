@@ -40,7 +40,7 @@ class ExplanationOnboardingViewController: UIViewController {
     }
 
     @IBAction func onBackTap(_ sender: UIButton) {
-        if stepCounter > 0 && stepCounter < 7 {
+        if stepCounter > 0 && stepCounter < 5 {
             self._stepCounter -= 1
         } else {
             navigationController?.popViewController(animated: true)
