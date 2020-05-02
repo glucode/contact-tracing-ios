@@ -253,6 +253,7 @@
 		03A59599245C29BC00B9AA56 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				FA5AE731245D6EDB005A59BE /* CountryName.plist */,
 				03A595AA245D75E100B9AA56 /* how-works-step1-dark.json */,
 				03A595A6245C5F3300B9AA56 /* how-works-step1-light.json */,
 				03A5959A245C2B9200B9AA56 /* Onboarding.storyboard */,
