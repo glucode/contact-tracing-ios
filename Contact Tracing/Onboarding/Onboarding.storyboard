@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k59-N1-IBx">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the official contact tracing app for [$Country]." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OE-Yd-0lh">
-                                <rect key="frame" x="24" y="727" width="366" height="41"/>
+                                <rect key="frame" x="24" y="727.33333333333337" width="366" height="40.666666666666629"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -76,13 +76,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" How does it work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ER-w8-TNH">
-                                <rect key="frame" x="138.5" y="72" width="137" height="21"/>
+                                <rect key="frame" x="138.66666666666666" y="72" width="136.99999999999997" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8I-w5-jFE">
-                                <rect key="frame" x="369" y="70.5" width="25" height="24"/>
+                                <rect key="frame" x="369" y="70.666666666666671" width="25" height="24"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -125,36 +125,39 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmy-ce-00U">
-                                <rect key="frame" x="-56" y="44" width="526" height="355"/>
+                                <rect key="frame" x="-55.666666666666657" y="44" width="525.33333333333337" height="355"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth-disabled-dark" translatesAutoresizingMaskIntoConstraints="NO" id="tcj-ud-Bmu">
-                                        <rect key="frame" x="235" y="115" width="56" height="56"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth-disabled-dark" translatesAutoresizingMaskIntoConstraints="NO" id="tcj-ud-Bmu" customClass="DesignableImageView" customModule="Contact_Tracing" customModuleProvider="target">
+                                        <rect key="frame" x="234.66666666666663" y="115" width="56" height="56"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="tcj-ud-Bmu" secondAttribute="height" multiplier="1:1" id="Ks1-xj-5Vb"/>
                                             <constraint firstAttribute="width" constant="56" id="UWK-ga-QO1"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable Bluetooth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9g-Mw-VEx">
-                                        <rect key="frame" x="164.5" y="220" width="197.5" height="21"/>
+                                        <rect key="frame" x="164.33333333333337" y="220" width="197" height="21"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" This app uses Bluetooth for anonymous contact tracing. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7m3-2I-du6">
-                                        <rect key="frame" x="97.5" y="255" width="331" height="36"/>
+                                        <rect key="frame" x="96.999999999999972" y="255" width="331.33333333333326" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-bq-oW0">
-                                        <rect key="frame" x="246.5" y="301" width="33" height="16"/>
+                                        <rect key="frame" x="246.33333333333331" y="301" width="33" height="16"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="728-1N-U0Q">
-                                        <rect key="frame" x="195.5" y="325" width="135" height="30"/>
+                                        <rect key="frame" x="195.33333333333331" y="325" width="135" height="30"/>
                                         <state key="normal" title="How does this work"/>
                                     </button>
                                 </subviews>
@@ -201,16 +204,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQG-TX-2ik">
-                                <rect key="frame" x="20" y="44" width="374" height="321"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQG-TX-2ik" userLabel="Enable Notifications View">
+                                <rect key="frame" x="20" y="44" width="374" height="374.66666666666669"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notifications-bell-white" translatesAutoresizingMaskIntoConstraints="NO" id="dw6-8h-oMV">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notifications-bell-white" translatesAutoresizingMaskIntoConstraints="NO" id="dw6-8h-oMV" customClass="DesignableImageView" customModule="Contact_Tracing" customModuleProvider="target">
                                         <rect key="frame" x="159" y="115" width="56" height="56"/>
                                         <color key="backgroundColor" name="dark-card-background-color"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="56" id="TMa-sr-qSS"/>
                                             <constraint firstAttribute="width" secondItem="dw6-8h-oMV" secondAttribute="height" multiplier="1:1" id="yoG-4t-uRJ"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oe3-cO-HIm">
                                         <rect key="frame" x="106" y="220" width="162" height="21"/>
@@ -219,29 +225,64 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In order to receive important updates, you’ll need to enable notifications." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyw-9r-eq2">
-                                        <rect key="frame" x="21.5" y="249" width="331" height="36"/>
+                                        <rect key="frame" x="21.333333333333343" y="249" width="331.33333333333326" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsN-82-FlQ">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsN-82-FlQ" customClass="DesignableView" customModule="Contact_Tracing" customModuleProvider="target">
                                         <rect key="frame" x="200" y="110" width="20" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xI-8l-PdA">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="7xI-8l-PdA" firstAttribute="leading" secondItem="vsN-82-FlQ" secondAttribute="leading" id="9fQ-gt-Lut"/>
+                                            <constraint firstItem="7xI-8l-PdA" firstAttribute="centerX" secondItem="vsN-82-FlQ" secondAttribute="centerX" id="RSq-XO-XPP"/>
+                                            <constraint firstItem="7xI-8l-PdA" firstAttribute="centerY" secondItem="vsN-82-FlQ" secondAttribute="centerY" id="fQO-ZO-WdJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="7xI-8l-PdA" secondAttribute="trailing" id="jRB-yO-ST6"/>
+                                            <constraint firstItem="7xI-8l-PdA" firstAttribute="top" secondItem="vsN-82-FlQ" secondAttribute="top" id="mSF-Ef-ejI"/>
+                                            <constraint firstAttribute="bottom" secondItem="7xI-8l-PdA" secondAttribute="bottom" id="mmc-oD-lYa"/>
                                             <constraint firstAttribute="width" secondItem="vsN-82-FlQ" secondAttribute="height" multiplier="1:1" id="tAb-Dm-hO0"/>
                                             <constraint firstAttribute="width" constant="20" id="ytl-zD-9zQ"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fullyRounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications can be configured in Settings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nV-vp-pkh">
+                                        <rect key="frame" x="20" y="300" width="334" height="15.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riz-Tk-U2D" customClass="UnderlinedButton" customModule="Contact_Tracing" customModuleProvider="target">
+                                        <rect key="frame" x="138" y="339.66666666666669" width="98" height="30"/>
+                                        <state key="normal" title="Open Settings"/>
+                                        <connections>
+                                            <action selector="onOpenSettingsTap:" destination="Kjx-wf-whz" eventType="touchUpInside" id="2Vs-6E-aFv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="dw6-8h-oMV" firstAttribute="top" secondItem="vsN-82-FlQ" secondAttribute="bottom" constant="-15" id="1Mp-zW-B8y"/>
-                                    <constraint firstAttribute="bottom" secondItem="vyw-9r-eq2" secondAttribute="bottom" constant="36" id="AuO-Yz-Znb"/>
+                                    <constraint firstItem="0nV-vp-pkh" firstAttribute="top" secondItem="vyw-9r-eq2" secondAttribute="bottom" constant="15" id="4iK-t6-cfD"/>
+                                    <constraint firstItem="0nV-vp-pkh" firstAttribute="leading" secondItem="bQG-TX-2ik" secondAttribute="leading" constant="20" id="6yy-2V-T77"/>
                                     <constraint firstItem="vyw-9r-eq2" firstAttribute="centerX" secondItem="bQG-TX-2ik" secondAttribute="centerX" id="Bg8-k1-oqR"/>
                                     <constraint firstItem="vyw-9r-eq2" firstAttribute="top" secondItem="oe3-cO-HIm" secondAttribute="bottom" constant="8" id="DvH-bt-kEd"/>
                                     <constraint firstItem="vsN-82-FlQ" firstAttribute="leading" secondItem="dw6-8h-oMV" secondAttribute="trailing" constant="-15" id="Os8-HT-WJy"/>
                                     <constraint firstItem="oe3-cO-HIm" firstAttribute="centerX" secondItem="bQG-TX-2ik" secondAttribute="centerX" id="Q8e-Ua-3EA"/>
+                                    <constraint firstItem="riz-Tk-U2D" firstAttribute="centerX" secondItem="bQG-TX-2ik" secondAttribute="centerX" id="RQe-La-UUT"/>
+                                    <constraint firstAttribute="bottom" secondItem="riz-Tk-U2D" secondAttribute="bottom" constant="5" id="aDD-Uu-B79"/>
+                                    <constraint firstAttribute="trailing" secondItem="0nV-vp-pkh" secondAttribute="trailing" constant="20" id="hzB-nv-0ww"/>
                                     <constraint firstItem="oe3-cO-HIm" firstAttribute="top" secondItem="dw6-8h-oMV" secondAttribute="bottom" constant="49" id="mJw-M2-fvD"/>
+                                    <constraint firstItem="riz-Tk-U2D" firstAttribute="top" secondItem="0nV-vp-pkh" secondAttribute="bottom" constant="24" id="qoN-Ss-92Y"/>
                                     <constraint firstItem="dw6-8h-oMV" firstAttribute="top" secondItem="bQG-TX-2ik" secondAttribute="top" constant="115" id="w57-Au-kVm"/>
                                     <constraint firstItem="dw6-8h-oMV" firstAttribute="centerX" secondItem="bQG-TX-2ik" secondAttribute="centerX" id="xLR-bc-185"/>
                                 </constraints>
@@ -253,7 +294,7 @@
                                     <constraint firstAttribute="height" constant="44" id="5uv-BH-EhT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Enable Notifications">
+                                <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -275,6 +316,15 @@
                         <viewLayoutGuide key="safeArea" id="sJP-yW-l4m"/>
                     </view>
                     <navigationItem key="navigationItem" id="y8y-iu-mLB"/>
+                    <connections>
+                        <outlet property="actionButton" destination="2a0-6E-PPO" id="aHx-dv-3A1"/>
+                        <outlet property="descriptionLabel" destination="vyw-9r-eq2" id="Q8A-wa-Vv1"/>
+                        <outlet property="messageLabel" destination="0nV-vp-pkh" id="jrL-E7-f68"/>
+                        <outlet property="notificationBadgeView" destination="vsN-82-FlQ" id="EKe-pR-lvj"/>
+                        <outlet property="notificationImageView" destination="dw6-8h-oMV" id="Alb-Uw-7Bj"/>
+                        <outlet property="openSettingsButton" destination="riz-Tk-U2D" id="2QD-cH-tpc"/>
+                        <outlet property="titleLabel" destination="oe3-cO-HIm" id="Spu-0m-IDU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Gk-ha-yRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
