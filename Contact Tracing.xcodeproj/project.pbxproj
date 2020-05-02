@@ -29,6 +29,8 @@
 		03A5959B245C2B9200B9AA56 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A5959A245C2B9200B9AA56 /* Onboarding.storyboard */; };
 		03A5959D245C350000B9AA56 /* BluetoothOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5959C245C350000B9AA56 /* BluetoothOnboardingViewController.swift */; };
 		03A5959F245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5959E245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift */; };
+		03A595A7245C5F3300B9AA56 /* ContactTracing_Onboarding_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A595A6245C5F3300B9AA56 /* ContactTracing_Onboarding_1.json */; };
+		03A595A9245C5FE900B9AA56 /* ExplanationOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A595A8245C5FE900B9AA56 /* ExplanationOnboardingViewController.swift */; };
 		0BB4165C8308A6CF0B4630D3 /* Pods_Contact_Tracing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D752466C9877BA77F699A1E5 /* Pods_Contact_Tracing.framework */; };
 		59B4B7E0BA657718BB0699BA /* Pods_Contact_TracingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3729FDBC20EFE20D4234A9CE /* Pods_Contact_TracingTests.framework */; };
 		7C43EA9CE82E57934CDFD06D /* Pods_Contact_Tracing_Contact_TracingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B34323DA1907E48BC3551D /* Pods_Contact_Tracing_Contact_TracingUITests.framework */; };
@@ -84,6 +86,8 @@
 		03A5959A245C2B9200B9AA56 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		03A5959C245C350000B9AA56 /* BluetoothOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothOnboardingViewController.swift; sourceTree = "<group>"; };
 		03A5959E245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsOnboardingViewController.swift; sourceTree = "<group>"; };
+		03A595A6245C5F3300B9AA56 /* ContactTracing_Onboarding_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ContactTracing_Onboarding_1.json; sourceTree = "<group>"; };
+		03A595A8245C5FE900B9AA56 /* ExplanationOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationOnboardingViewController.swift; sourceTree = "<group>"; };
 		3729FDBC20EFE20D4234A9CE /* Pods_Contact_TracingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contact_TracingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59319096084665E08265899A /* Pods-Contact TracingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact TracingTests.release.xcconfig"; path = "Target Support Files/Pods-Contact TracingTests/Pods-Contact TracingTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BE07B58EA37FCFF9F90FE24 /* Pods-Contact Tracing-Contact TracingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact Tracing-Contact TracingUITests.release.xcconfig"; path = "Target Support Files/Pods-Contact Tracing-Contact TracingUITests/Pods-Contact Tracing-Contact TracingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -247,9 +251,11 @@
 		03A59599245C29BC00B9AA56 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				03A595A6245C5F3300B9AA56 /* ContactTracing_Onboarding_1.json */,
 				03A5959A245C2B9200B9AA56 /* Onboarding.storyboard */,
 				03A5959C245C350000B9AA56 /* BluetoothOnboardingViewController.swift */,
 				03A5959E245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift */,
+				03A595A8245C5FE900B9AA56 /* ExplanationOnboardingViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -415,6 +421,7 @@
 				03A59556245A252700B9AA56 /* LaunchScreen.storyboard in Resources */,
 				03A5958C245AD90400B9AA56 /* BluetoothDisabled.storyboard in Resources */,
 				03A5958E245ADE1200B9AA56 /* BluetoothUnknown.storyboard in Resources */,
+				03A595A7245C5F3300B9AA56 /* ContactTracing_Onboarding_1.json in Resources */,
 				03A59590245AE0D600B9AA56 /* ContactTracingEnabled.storyboard in Resources */,
 				03A59553245A252700B9AA56 /* Assets.xcassets in Resources */,
 				03A5959B245C2B9200B9AA56 /* Onboarding.storyboard in Resources */,
@@ -549,6 +556,7 @@
 			files = (
 				FA5AE723245C5AAF005A59BE /* UIImageView+Designable.swift in Sources */,
 				03A59582245A5EEC00B9AA56 /* ContactTracingOffViewController.swift in Sources */,
+				03A595A9245C5FE900B9AA56 /* ExplanationOnboardingViewController.swift in Sources */,
 				03A5957E245A4FB300B9AA56 /* PillButton.swift in Sources */,
 				03A5959F245C3E1200B9AA56 /* NotificationsOnboardingViewController.swift in Sources */,
 				03A5957A245A26EF00B9AA56 /* MainViewController.swift in Sources */,
@@ -742,7 +750,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Contact-Tracing";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.contact-tracing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -761,7 +769,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.Contact-Tracing";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.glucode.contact-tracing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

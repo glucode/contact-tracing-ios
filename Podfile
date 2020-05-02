@@ -7,6 +7,7 @@ target 'Contact Tracing' do
 
   # Pods for Contact Tracing
   pod 'HGRippleRadarView', :git => 'https://github.com/glucode/HGRippleRadarView.git'
+  pod 'lottie-ios'
 
   target 'Contact TracingTests' do
     inherit! :search_paths
