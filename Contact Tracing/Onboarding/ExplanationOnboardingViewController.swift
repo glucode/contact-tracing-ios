@@ -13,6 +13,13 @@ import Lottie
 class ExplanationOnboardingViewController: UIViewController {
     
     @IBOutlet weak var animationView: AnimationView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var descriptionLabelBottomConstraint: NSLayoutConstraint!
+
+    private var interfaceStyle: String {
+        let style = isDarkMode ? "dark" : "light"
+        return style
+    }
 
     private var stepCounter = 0
     private var _stepCounter: Int {
@@ -20,12 +27,12 @@ class ExplanationOnboardingViewController: UIViewController {
             return stepCounter
         } set {
             self.stepCounter = newValue
-            updateUIBasedOnStep()
+            showStep(for: newValue)
         }
     }
 
     @IBAction func onNextTap(_ sender: UIButton) {
-        if stepCounter < 6 {
+        if stepCounter < 5 {
             self._stepCounter += 1
         } else {
             performSegue(withIdentifier: "onboardingStepComplete", sender: nil)
@@ -40,35 +47,44 @@ class ExplanationOnboardingViewController: UIViewController {
         }
     }
 
-    private var interfaceStyle: String {
-        let style = isDarkMode ? "dark" : "light"
-        return style
-    }
-    
-    private func showStepOne() {
-        animationView.animation = Animation.named("how-works-step1-\(interfaceStyle)")
-        animationView.play()
-    }
+    // TODO: Move to ViewModel perhaps?
+    var steps = [
+        "This app anonymously tracks if you have been nearby someone who tested positive for COVID-19.",
+        "Your phone shares a unique number with phones around you. This happens anonymously.",
+        "You also receive unique numbers from phones around you. They are stored securely.",
+        "If someone tests positive for COVID-19, their unique number is shared with all phones in your country.",
+        "Every phone that has been nearby this phone in the last 14 days will receive a notification.",
+        "All data is anonymously shared, securely stored, and can’t be traced back to your identity."
+    ]
+}
 
-    func updateUIBasedOnStep() {
-        switch stepCounter {
-        case 1:
-            showStepOne()
-        case 2:
-            print(stepCounter)
-        case 3:
-            print(stepCounter)
-        case 4:
-            print(stepCounter)
-        case 5:
-            print(stepCounter)
-        case 6:
-            print(stepCounter)
-        default:
-            break
+// MARK: - Steps
+extension ExplanationOnboardingViewController {
+    func showStep(for step: Int) {
+        if step > 0 && step <= 5 {
+            changeTextAndAnimate(with: steps[step])
+            animationView.animation = Animation.named("how-works-step\(step)-\(interfaceStyle)")
+            animationView.play()
         }
     }
-    
+}
+
+// MARK: - Animations
+extension ExplanationOnboardingViewController {
+    func changeTextAndAnimate(with text: String) {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.descriptionLabelBottomConstraint.constant -= 25
+            self.descriptionLabel.alpha = 0
+            self.view.layoutIfNeeded()
+        }) { (_) in
+            UIView.animate(withDuration: 0.25, animations: {
+                self.descriptionLabelBottomConstraint.constant += 25
+                self.descriptionLabel?.text = text
+                self.descriptionLabel.alpha = 1
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        }
+    }
 }
 
 extension UIViewController {
