@@ -61,11 +61,9 @@ class ExplanationOnboardingViewController: UIViewController {
 // MARK: - Steps
 extension ExplanationOnboardingViewController {
     func showStep(for step: Int) {
-        if step > 0 && step <= 5 {
-            changeTextAndAnimate(with: steps[step])
-            animationView.animation = Animation.named("how-works-step\(step)-\(interfaceStyle)")
-            animationView.play()
-        }
+        changeTextAndAnimate(with: steps[step])
+        animationView.animation = Animation.named("how-works-step\(step)-\(interfaceStyle)")
+        animationView.play()
     }
 }
 
