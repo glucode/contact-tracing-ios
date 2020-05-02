@@ -33,11 +33,12 @@ class NotificationsOnboardingViewController: UIViewController {
     @IBAction func actionButtonPressed(_ sender: Any) {
         switch notificationPermissionState {
         case .authorized:
+            continueToNextStep()
             break
         case .notDetermined:
             requestNotificationsPermission()
         case .denied:
-            self.presentMainViewController()
+            continueToNextStep()
         }
     }
 }
@@ -68,17 +69,25 @@ extension NotificationsOnboardingViewController {
             self.actionButton.setTitle("Continue", for: .normal)
         }
     }
+    
+    private func updateUIForAuthorizedPermission() {
+        DispatchQueue.main.async {
+            self.notificationBadgeView.isHidden = false
+            self.notificationImageView.image = UIImage(named: "notifications-bell-white")
+            self.notificationImageView.backgroundColor = UIColor(named: "dark-card-background-color")
+            self.titleLabel.text = "Notifications are enabled"
+            self.messageLabel.isHidden = true
+            self.openSettingsButton.isHidden = true
+            self.actionButton.setTitle("Continue", for: .normal)
+        }
+    }
 }
 
 // MARK: - Permissions
 extension NotificationsOnboardingViewController {
     private func requestNotificationsPermission() {
         NotificationManager.shared.requestAuthorisation { (granted, error) in
-            if granted {
-                self.presentMainViewController()
-            } else {
-                self.updateUIForDeniedPermission()
-            }
+            self.determineNotificationsPermissions()
         }
     }
 
@@ -87,6 +96,7 @@ extension NotificationsOnboardingViewController {
             switch status {
             case .authorized:
                 self.notificationPermissionState = .authorized
+                self.updateUIForAuthorizedPermission()
             case .denied:
                 self.notificationPermissionState = .denied
                 self.updateUIForDeniedPermission()
@@ -101,12 +111,9 @@ extension NotificationsOnboardingViewController {
 
 // MARK: - Presenting
 extension NotificationsOnboardingViewController {
-    func presentMainViewController() {
+    func continueToNextStep() {
         DispatchQueue.main.async {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            guard let viewController = storyboard.instantiateInitialViewController() else { return }
-            viewController.modalPresentationStyle = .fullScreen
-            self.present(viewController, animated: true, completion: nil)
+            self.navigationController?.dismiss(animated: false, completion: nil)
         }
     }
 }
