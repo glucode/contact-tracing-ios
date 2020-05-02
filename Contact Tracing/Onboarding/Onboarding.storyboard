@@ -276,7 +276,10 @@
                                     </label>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riz-Tk-U2D" customClass="UnderlinedButton" customModule="Contact_Tracing" customModuleProvider="target">
                                         <rect key="frame" x="138" y="339.66666666666669" width="98" height="30"/>
-                                        <state key="normal" title="Open Settings"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="attributedString" value="Open Settings"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="onOpenSettingsTap:" destination="Kjx-wf-whz" eventType="touchUpInside" id="2Vs-6E-aFv"/>
                                         </connections>

@@ -39,6 +39,7 @@
 		FA5AE723245C5AAF005A59BE /* UIImageView+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */; };
 		FA5AE726245C6E74005A59BE /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE725245C6E74005A59BE /* UIApplication+Extension.swift */; };
 		FA5AE729245C704E005A59BE /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE728245C704E005A59BE /* NotificationManager.swift */; };
+		FA5AE734245D811A005A59BE /* UIButton+Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AE733245D811A005A59BE /* UIButton+Designable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Designable.swift"; sourceTree = "<group>"; };
 		FA5AE725245C6E74005A59BE /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		FA5AE728245C704E005A59BE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		FA5AE733245D811A005A59BE /* UIButton+Designable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Designable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 		FA5AE71F245C5851005A59BE /* Designables */ = {
 			isa = PBXGroup;
 			children = (
+				FA5AE733245D811A005A59BE /* UIButton+Designable.swift */,
 				FA5AE720245C5877005A59BE /* UIView+Designable.swift */,
 				FA5AE722245C5AAF005A59BE /* UIImageView+Designable.swift */,
 			);
@@ -574,6 +577,7 @@
 				FA5AE729245C704E005A59BE /* NotificationManager.swift in Sources */,
 				03A5959D245C350000B9AA56 /* BluetoothOnboardingViewController.swift in Sources */,
 				03A5957C245A47BA00B9AA56 /* RoundedCornerView.swift in Sources */,
+				FA5AE734245D811A005A59BE /* UIButton+Designable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
