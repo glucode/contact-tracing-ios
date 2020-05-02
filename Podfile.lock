@@ -1,8 +1,14 @@
 PODS:
   - HGRippleRadarView (0.1.2)
+  - lottie-ios (3.1.8)
 
 DEPENDENCIES:
   - HGRippleRadarView (from `https://github.com/glucode/HGRippleRadarView.git`)
+  - lottie-ios
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
 
 EXTERNAL SOURCES:
   HGRippleRadarView:
@@ -15,7 +21,8 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   HGRippleRadarView: 0f28d0bfab34fe1969f1178c0dfd4e84dfbd4f99
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
 
-PODFILE CHECKSUM: 690024af11e8f27f4cb017bf5e8cfd8713b97c4c
+PODFILE CHECKSUM: cfb71dfa50043ed2aae1c30fd249d7f92e9fbc4d
 
 COCOAPODS: 1.9.1

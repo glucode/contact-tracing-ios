@@ -31,8 +31,8 @@ class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
     @IBOutlet weak var radarContainerView: RadarView!
     
     override func viewDidLoad() {
-        bluetoothManager = CBCentralManager(delegate: self, queue: nil, options: nil)
-        peripheralManager.delegate = self
+//        bluetoothManager = CBCentralManager(delegate: self, queue: nil, options: nil)
+//        peripheralManager.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
