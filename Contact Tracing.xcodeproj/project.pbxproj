@@ -38,6 +38,7 @@
 		03A595B3245DD92300B9AA56 /* how-works-step2-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A595B2245DD92300B9AA56 /* how-works-step2-dark.json */; };
 		03A595B5245DD92900B9AA56 /* how-works-step3-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A595B4245DD92900B9AA56 /* how-works-step3-dark.json */; };
 		03A595B7245DD93100B9AA56 /* how-works-step4-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A595B6245DD93100B9AA56 /* how-works-step4-dark.json */; };
+		03A595B9245EE9D800B9AA56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03A595B8245EE9D800B9AA56 /* Localizable.strings */; };
 		0BB4165C8308A6CF0B4630D3 /* Pods_Contact_Tracing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D752466C9877BA77F699A1E5 /* Pods_Contact_Tracing.framework */; };
 		59B4B7E0BA657718BB0699BA /* Pods_Contact_TracingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3729FDBC20EFE20D4234A9CE /* Pods_Contact_TracingTests.framework */; };
 		7C43EA9CE82E57934CDFD06D /* Pods_Contact_Tracing_Contact_TracingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B34323DA1907E48BC3551D /* Pods_Contact_Tracing_Contact_TracingUITests.framework */; };
@@ -103,6 +104,7 @@
 		03A595B2245DD92300B9AA56 /* how-works-step2-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "how-works-step2-dark.json"; sourceTree = "<group>"; };
 		03A595B4245DD92900B9AA56 /* how-works-step3-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "how-works-step3-dark.json"; sourceTree = "<group>"; };
 		03A595B6245DD93100B9AA56 /* how-works-step4-dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "how-works-step4-dark.json"; sourceTree = "<group>"; };
+		03A595B8245EE9D800B9AA56 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3729FDBC20EFE20D4234A9CE /* Pods_Contact_TracingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Contact_TracingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59319096084665E08265899A /* Pods-Contact TracingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact TracingTests.release.xcconfig"; path = "Target Support Files/Pods-Contact TracingTests/Pods-Contact TracingTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BE07B58EA37FCFF9F90FE24 /* Pods-Contact Tracing-Contact TracingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Contact Tracing-Contact TracingUITests.release.xcconfig"; path = "Target Support Files/Pods-Contact Tracing-Contact TracingUITests/Pods-Contact Tracing-Contact TracingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		03A59548245A252600B9AA56 /* Contact Tracing */ = {
 			isa = PBXGroup;
 			children = (
+				03A595B8245EE9D800B9AA56 /* Localizable.strings */,
 				03A59599245C29BC00B9AA56 /* Onboarding */,
 				03A59549245A252600B9AA56 /* AppDelegate.swift */,
 				03A5954B245A252600B9AA56 /* SceneDelegate.swift */,
@@ -454,6 +457,7 @@
 				03A59553245A252700B9AA56 /* Assets.xcassets in Resources */,
 				03A5959B245C2B9200B9AA56 /* Onboarding.storyboard in Resources */,
 				03A595AF245DD5BB00B9AA56 /* how-works-step3-light.json in Resources */,
+				03A595B9245EE9D800B9AA56 /* Localizable.strings in Resources */,
 				03A595B7245DD93100B9AA56 /* how-works-step4-dark.json in Resources */,
 				03A59551245A252600B9AA56 /* Main.storyboard in Resources */,
 				03A59588245ACB0700B9AA56 /* BluetoothOff.storyboard in Resources */,
