@@ -12,4 +12,17 @@ import CoreBluetooth
 
 class BluetoothOnboardingViewController: UIViewController {
     
+    @IBOutlet weak var continueButtonWidthConstraint: NSLayoutConstraint!
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        animateContinueButtonWidth()
+    }
+
+    func animateContinueButtonWidth() {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.continueButtonWidthConstraint.constant = self.view.frame.width - 48
+            self.view.layoutIfNeeded()
+        }, completion: nil)
+    }
 }
