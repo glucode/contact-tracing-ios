@@ -198,12 +198,9 @@
                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="728-1N-U0Q" customClass="UnderlinedButton" customModule="Contact_Tracing" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="728-1N-U0Q">
                                         <rect key="frame" x="24" y="346.33333333333331" width="326" height="30"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="attributedString" value="How does this work"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="underline" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
+                                        <state key="normal" title="How does this work"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -243,6 +240,7 @@
                         <outlet property="actionButton" destination="Sef-Fw-BzA" id="Dba-NK-xKr"/>
                         <outlet property="bluetoothStateImageView" destination="tcj-ud-Bmu" id="Fb9-Nu-whn"/>
                         <outlet property="continueButtonWidthConstraint" destination="E84-pc-vF7" id="Im0-Vw-2bo"/>
+                        <outlet property="howDoesThisWorkButton" destination="728-1N-U0Q" id="Lgq-Ym-8LA"/>
                         <outlet property="titleLabel" destination="p9g-Mw-VEx" id="VnS-cV-mJa"/>
                         <segue destination="Kjx-wf-whz" kind="show" identifier="showNotificationsOnboarding" animates="NO" id="g07-Bk-rC2"/>
                     </connections>

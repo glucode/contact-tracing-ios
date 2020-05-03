@@ -9,6 +9,7 @@ class BluetoothOnboardingViewController: UIViewController, CBCentralManagerDeleg
     @IBOutlet weak var continueButtonWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bluetoothStateImageView: DesignableImageView!
+    @IBOutlet weak var howDoesThisWorkButton: UIButton!
     @IBOutlet weak var actionButton: PillButton!
     
 
@@ -92,12 +93,22 @@ class BluetoothOnboardingViewController: UIViewController, CBCentralManagerDeleg
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateUI()
+        underlineButton()
+    }
+
+    func underlineButton() {
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.systemFont(ofSize: 15),
+            .underlineStyle: NSUnderlineStyle.single.rawValue
+        ]
+        let string = NSMutableAttributedString(string: "How does this work", attributes: attributes)
+        howDoesThisWorkButton.setAttributedTitle(string, for: .normal)
     }
 
     func animateContinueButtonWidth() {
-        UIView.animate(withDuration: 10.25, animations: {
+        UIView.animate(withDuration: 0.25, animations: {
             self.continueButtonWidthConstraint.constant = self.view.bounds.width - 48
-//            self.view.layoutIfNeeded()
+            self.view.layoutIfNeeded()
         }, completion: nil)
     }
     
