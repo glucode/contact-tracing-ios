@@ -18,8 +18,8 @@ enum AppState {
 }
 
 class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate {
-    let peripheralManager = CBPeripheralManager()
-    let manager = ENManager()
+//    let peripheralManager = CBPeripheralManager()
+//    let manager = ENManager()
 
     private var bluetoothManager: CBCentralManager?
     private var appState: AppState = .contactTracingOff
@@ -42,7 +42,7 @@ class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
             showOnboarding()
         }
         
-        configureManager()
+//        configureManager()
         updateUI()
     }
     
@@ -56,13 +56,13 @@ class MainViewController: UIViewController, CBCentralManagerDelegate, CBPeripher
     
     func configureManager() {
 
-        manager.activate { error in
-            guard error == nil else { return }
-
-            self.manager.setExposureNotificationEnabled(true) { error in
-                guard error == nil else { return }
-            }
-        }
+//        manager.activate { error in
+//            guard error == nil else { return }
+//
+//            self.manager.setExposureNotificationEnabled(true) { error in
+//                guard error == nil else { return }
+//            }
+//        }
     }
     
     
